@@ -3,10 +3,8 @@ name: documentation
 on:
   pull_request:
     branches: [main]
-    paths: ['Getdeck/**']
   push:
     branches: [main]
-    paths: ['Getdeck/**']
 
 jobs:
   checks:
