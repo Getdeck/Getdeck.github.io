@@ -6,5 +6,6 @@ sidebar_position: 1
 
 Let's discover **Getdeck in less than 5 minutes**.
 
-## Getting Started
+## Installation
+
 
