@@ -22,6 +22,10 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: 'GTM-TM2VPNG',
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
