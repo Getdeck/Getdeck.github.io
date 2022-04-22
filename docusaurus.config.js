@@ -60,6 +60,12 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {
+            type: 'doc',
+            docId: 'deckfile/deckfile-specs',
+            position: 'left',
+            label: 'deck.yaml',
+          },
         ],
       },
       footer: {
