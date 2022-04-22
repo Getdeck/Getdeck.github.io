@@ -65,6 +65,12 @@ const config = {
             docId: 'deckfile/deckfile-specs',
             position: 'left',
             label: 'deck.yaml',
+            className: 'navbar-icon-menu',
+          },
+          {
+            href: 'https://github.com/Getdeck/getdeck',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },

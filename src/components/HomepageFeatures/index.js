@@ -12,11 +12,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'No Kubernetes knowledge required',
+    title: 'Like docker-compose for Kubernetes.',
     description: (
       <>
         Find a <i>Deckfile</i> that is describing your setup,
-        run <code>deck get ...</code> and you are ready to work.
+        run <code>deck get ...</code> and you are ready to work.<br/>
+        No Kubernetes knowledge required.
       </>
     ),
   },
