@@ -15,10 +15,10 @@ This might take a few minutes. When its done, open your browser at
 You should see a kubernetes dashboard with some information about the namespace
 we just deployed using `deck`!
 
-To clean it up, just run the following command:
+To clean it up (i.e. remove the cluster), just run the following command:
 
 ```bash
-deck remove deck remove https://github.com/gefyrahq/gefyra-demos.git
+deck remove --cluster https://github.com/gefyrahq/gefyra-demos.git
 ```
 
-Now go and write your own deck files!
+Now go and write your own [Deckfile](/docs/deckfile/specs)!

@@ -88,22 +88,31 @@ const config = {
                 label: 'Deckfile',
                 to: '/docs/deckfile/specs',
               },
+              {
+                label: 'CLI Reference',
+                to: '/docs/deck/for-devs/cli-reference',
+              },
             ],
           },
           {
             title: 'Community',
-            items: [],
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/Getdeck/getdeck',
+              },
+            ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Unikube',
-                href: 'https://unikube.io',
+                label: 'Gefyra',
+                href: 'https://github.com/gefyrahq/gefyra',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/Getdeck',
+                label: 'Unikube',
+                href: 'https://unikube.io',
               },
             ],
           },

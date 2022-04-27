@@ -18,4 +18,9 @@ always feasible to run the entire production infrastructure on your Pentium 3 no
 you to work on. Just enough to get your work done in the required context. If you need another deck, ask your operators 
 to create it upon your requirements or go on and define it yourself.
 
-Find deck examples at the [Deckfile specification](deckfile/deckfile-specs) page.
+Find deck examples at the [Deckfile specification](/docs/deckfile/specs) page.
+
+Providing a _Deckfile_ is crucial for working with Getdeck. It's like a `docker-compose.yaml` for Kubernetes-based development
+environments. However, it is more difficult to compose a Kubernetes workload than a docker-compose file, as it requires
+the knowledge of a Kubernetes practitioner. Please read on how to write a Deckfile to specify a Kubernetes-based development
+which is close to your production system by using the workload descriptors you potentially already use.
