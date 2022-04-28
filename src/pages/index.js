@@ -14,20 +14,19 @@ function HomepageHeader() {
                 <img src="img/logo_large.png"/>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className={styles.buttons}>
-                    <a>
+
                         <Link
                             className="button button--active button--lg"
                             to="/docs/deck/intro">
                             Introduction
                         </Link>
-                    </a>
-                    <a>
+
+
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs/deck/getting-started">
                             Getting started
                         </Link>
-                    </a>
 
                 </div>
             </div>
