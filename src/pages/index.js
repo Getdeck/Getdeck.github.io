@@ -7,35 +7,44 @@ import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            <div className="container">
+                <img src="img/logo_large.png"/>
+                <p className="hero__subtitle">{siteConfig.tagline}</p>
+                <div className={styles.buttons}>
+                    <a>
+                        <Link
+                            className="button button--active button--lg"
+                            to="/docs/deck/intro">
+                            Introduction
+                        </Link>
+                    </a>
+                    <a>
+                        <Link
+                            className="button button--secondary button--lg"
+                            to="/docs/deck/getting-started">
+                            Getting started
+                        </Link>
+                    </a>
 
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/deck/intro">
-            Get a Deck running in under 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
+                </div>
+            </div>
+        </header>
+    );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Getdeck, a CLI that creates reproducible Kubernetes environments for development and testing">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+    const {siteConfig} = useDocusaurusContext();
+    return (
+        <Layout
+            title={`Hello from ${siteConfig.title}`}
+            description="Getdeck, a CLI that creates reproducible Kubernetes environments for development and testing">
+            <HomepageHeader/>
+            <main>
+                <HomepageFeatures/>
+            </main>
+        </Layout>
+    );
 }
