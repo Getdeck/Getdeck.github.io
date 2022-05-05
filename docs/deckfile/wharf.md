@@ -20,4 +20,5 @@ If you want to run an [Epinio](https://epinio.io) on your local machine, just ru
 ```bash
 deck get https://raw.githubusercontent.com/Getdeck/wharf/main/epinio/deck.yaml
 ```
-Please follow the _notes_ to find out how to get started with this deck.
+Please follow the _notes_ to find out how to get started with this deck.  
+Required `deck`  version: **0.6.0+**

@@ -21,7 +21,7 @@ of a [Deck for development here](/docs/deck).
 The Deckfile defines [a Kubernetes cluster configuration](#cluster-specification) and a number [of named decks](#decks-specification).
 
 ## State of this document
-This Deckfile specification is implemented by [`deck` **0.5.2+**](/docs/deck/installation). The distribution of this document is unlimited.
+This Deckfile specification is implemented by [`deck` **0.6.0+**](/docs/deck/installation). The distribution of this document is unlimited.
 
 ## Deckfile location
 The default path for a Deckfile is `deck.yaml` at any location. A Deckfile can be loaded from a variety of locations:
