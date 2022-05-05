@@ -131,6 +131,11 @@ Valid string values for the `namespace` attribute are: an arbitrary name for the
 also a valid namespace identifier. For more information please check the Kubernetes 
 documentation on [namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
 
+#### `notes`
+Valid string values for the `notes` attribute are: an arbitrary text to describe this deck.  
+It is displayed at the end of the installation of this deck and is useful to provide additional guidance for the
+developer to get started.
+
 #### `sources`
 Valid object values for the `sources` attribute are: a list of valid [source](#source-definition) objects.
 
