@@ -21,12 +21,12 @@ of a [Deck for development here](/docs/deck).
 The Deckfile defines [a Kubernetes cluster configuration](#cluster-specification) and a number [of named decks](#decks-specification).
 
 ## State of this document
-This Deckfile specification is implemented by [`deck` **0.6.0+**](/docs/deck/installation). The distribution of this document is unlimited.
+This Deckfile specification is implemented by [`deck` **0.7.0+**](/docs/deck/installation). The distribution of this document is unlimited.
 
 ## Deckfile location
 The default path for a Deckfile is `deck.yaml` at any location. A Deckfile can be loaded from a variety of locations:
 * _http/https_ locations, e.g. `https://raw.githubusercontent.com/gefyrahq/gefyra-demos/main/deck.yaml`
-* _git_ locations, e.g. `git@github.com:gefyrahq/gefyra-demos.git`
+* _git_ locations, e.g. `git@github.com:gefyrahq/gefyra-demos.git`, or including a revision followed by a `#`, e.g. `git@github.com:gefyrahq/gefyra-demos.git#1.0.0`
 * from the local file system, e.g. `/my/path/deck.yaml` or simply `.`
 
 Please mind that accessing locations with `deck` always happens with the identity of the local user, i.e. private _git_ repositories
@@ -307,14 +307,15 @@ content:
 For smaller Kubernetes objects, the `content` attribute can be used to install these for a deck.
 
 
-
 ### `Kustomize` sources
 Workloads specified by a `kustomization.yaml` can be installed using the source of `type: kustomize`. The following attributes are available to specify the remote location.
 
 #### `ref`
 Valid string values for the `ref` attribute are: 
 * http-locations (as used by `kubectl kustomize`), for example `https://github.com/zalando/postgres-operator/manifests`. 
-* git-locations, for example `git@github.com:Blueshoe/java-spring-example-charts.git` (no path!)
+* git-locations, for example `git@github.com:Blueshoe/java-spring-example-charts.git` 
+
+> `git` locations in the `ref` attribute do not support a path suffix, use the `path` attribute instead
 
 #### `targetRevision`
 Valid string values for the `targetRevision` attribute are: revisions available at the `git` location from 
