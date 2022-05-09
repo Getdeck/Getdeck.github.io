@@ -313,7 +313,7 @@ Workloads specified by a `kustomization.yaml` can be installed using the source 
 
 #### `ref`
 Valid string values for the `ref` attribute are: 
-* http-locations (as used by `kubectl kustomize`), for example `github.com/zalando/postgres-operator/manifests`. 
+* http-locations (as used by `kubectl kustomize`), for example `https://github.com/zalando/postgres-operator/manifests`. 
 * git-locations, for example `git@github.com:Blueshoe/java-spring-example-charts.git` (no path!)
 
 #### `targetRevision`
