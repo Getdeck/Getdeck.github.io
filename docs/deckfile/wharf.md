@@ -22,3 +22,13 @@ deck get https://raw.githubusercontent.com/Getdeck/wharf/main/epinio/deck.yaml
 ```
 Please follow the _notes_ to find out how to get started with this deck.  
 Required `deck`  version: **0.6.0+**
+
+
+## OpenFaaS
+
+If you want to run an [OpenFaaS](https://www.openfaas.com/) on your local machine, just run:
+```bash
+deck get https://raw.githubusercontent.com/Getdeck/wharf/main/openfaas/deck.yaml
+```
+Please follow the _notes_ to find out how to get started with this deck.  
+Required `deck`  version: **0.6.0+**
