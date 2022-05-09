@@ -309,7 +309,35 @@ For smaller Kubernetes objects, the `content` attribute can be used to install t
 
 
 ### `Kustomize` sources
-> Preview: Kustomize support will be available soon
+Workloads specified by a `kustomization.yaml` can be installed using the source of `type: kustomize`. The following attributes are available to specify the remote location.
+
+#### `ref`
+Valid string values for the `ref` attribute are: 
+* http-locations (as used by `kubectl kustomize`), for example `https://github.com/zalando/postgres-operator/manifests`. 
+* git-locations, for example `git@github.com:Blueshoe/java-spring-example-charts.git` (no path!)
+
+#### `targetRevision`
+Valid string values for the `targetRevision` attribute are: revisions available at the `git` location from 
+the `ref` attribute.   
+From a git location, `deck` will check out this revision name (i.e. a tag, branch name, commit) before processing the source.
+This value is optional. The default branch of the repository will be checked out, if left empty.
+
+#### `path`
+Valid string values for the `path` attribute are: a relative path in the location from `ref`. In the above example, e.g. `polls_k/overlays/development`
+
+#### Deck example
+```yaml
+# ...
+decks:
+  - name: polls
+    namespace: polls
+    sources:
+    - type: kustomize
+      ref: git@github.com:Blueshoe/java-spring-example-charts.git
+      targetRevision: main  # optional, default branch is checked out otherwise
+      path: polls_k/overlays/development
+```
+See [deckfile example](#an-example-deckfile) for the full structure of a `deck.yaml` file.
 
 ### `Directory` sources
 > Preview: Directory support will be available soon
