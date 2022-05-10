@@ -12,8 +12,11 @@ deck get https://github.com/gefyrahq/gefyra-demos.git
 
 This might take a few minutes. When its done, open your browser at
 [http://dashboard.127.0.0.1.nip.io:8080/#/workloads?namespace=oauth2-demo](http://dashboard.127.0.0.1.nip.io:8080/#/workloads?namespace=oauth2-demo).
-You should see a kubernetes dashboard with some information about the namespace
-we just deployed using `deck`!
+You should see a kubernetes dashboard with some information about the namespace:
+
+![Kubernetes Dashboard](/img/kubernetes_dashboard.png)
+
+We just deployed a whole application using `deck`!
 
 To clean it up (i.e. remove the cluster), just run the following command:
 
