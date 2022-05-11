@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 # Installation
 
 <Tabs>
-<TabItem value="linux" label="Linux" default>
+<TabItem value="macos" label="MacOS (Universal)" default>
 
 We provide a simple installation script, which will take care for everything:
 
@@ -21,8 +21,14 @@ curl -sSL https://raw.githubusercontent.com/getdeck/getdeck/main/install.sh | sh
 <TabItem value="windows" label="Windows">
 	Coming Soon!
 </TabItem>
-<TabItem value="macos" label="MacOS">
-	Coming Soon!
+<TabItem value="linux" label="Linux" default>
+
+We provide a simple installation script, which will take care for everything:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/getdeck/getdeck/main/install.sh | sh -
+```
+
 </TabItem>
 </Tabs>
 		
