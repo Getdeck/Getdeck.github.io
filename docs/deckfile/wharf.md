@@ -32,3 +32,16 @@ deck get https://raw.githubusercontent.com/Getdeck/wharf/main/openfaas/deck.yaml
 ```
 Please follow the _notes_ to find out how to get started with this deck.  
 Required `deck`  version: **0.6.0+**
+
+
+## Django
+The following decks are running a typical django stack with PostgresSQL
+(using [Zalando's PostgreSQL Operator](https://postgres-operator.readthedocs.io/en/latest/)).
+
+### django-hurricane
+If you want to run the [spacecrafts](https://django-hurricane.io/basic-app/) demo of [django-hurricane](https://django-hurricane.io), just run
+```bash
+deck get https://raw.githubusercontent.com/Getdeck/wharf/main/django/deck.yaml
+```
+Please follow the _notes_ to find out how to get started with this deck.  
+Required `deck`  version: **0.6.0+**
