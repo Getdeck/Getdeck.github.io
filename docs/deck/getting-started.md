@@ -3,7 +3,6 @@ sidebar_position: 4
 ---
 
 # Getting started
-
 We provide a sophisticated demo project you can deploy locally using `Getdeck`:
 
 ```bash

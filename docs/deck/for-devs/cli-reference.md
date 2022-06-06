@@ -36,10 +36,12 @@ is installed. Otherwise `--name` is mandatory.
 
 ### Optional arguments
 
-| Argument           | Description                                     |
-|:-------------------|:------------------------------------------------|
-| `--name`           | the deck that you want to run from the Deckfile |
-| `-I`, `--no-cluster` | do not set up the cluster, use current kubectl context |
+| Argument                        | Description                                                                                           |
+|:--------------------------------|:------------------------------------------------------------------------------------------------------|
+| `--name NAME`                   | The deck that you want to run from the Deckfile                                                       |
+| `-I`, `--no-cluster`            | Do not set up the cluster, use current kubectl context                                                |
+| `-W, --wait`                    | Wait for the Pods of the Deck to become ready                                                         |
+| `-T TIMEOUT, --timeout TIMEOUT` | Timeout (in seconds, default 120) for the Pods of the Deck to become ready; if exceeded the run fails |
 
 
 ## `deck list`
