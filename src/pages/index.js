@@ -64,7 +64,7 @@ export default function Home() {
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs/deckfile/specs#cluster-definition">
-                            Supported Kubernetes Distos
+                            Supported Kubernetes Distros
                         </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
