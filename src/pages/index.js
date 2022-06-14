@@ -138,7 +138,7 @@ export default function Home() {
                 </section>
                 <section className={clsx(styles.sectionSideBySide, styles.sideBySideReversed)}>
                     <div className={clsx(styles.sideBySideContent)}>
-                        <h3 className={clsx(styles.sectionHeading)}>Enjoy well-testes Kubernetes <strong>standard stacks</strong></h3>
+                        <h3 className={clsx(styles.sectionHeading)}>Enjoy well-tested Kubernetes <strong>standard stacks</strong></h3>
                         <p className={clsx(styles.sideBySideContentText)}>
                             Getdeck Wharf is a collection of of common tech stacks or advanced components running in Kubernetes.
                             Feel free to use the Deckfiles from the wharf for your local development. The well-crafted development
