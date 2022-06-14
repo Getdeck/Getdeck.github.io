@@ -22,3 +22,85 @@
   justify-content: center;
 }
 
+.section {
+  padding: 50px 0 60px;
+}
+
+/*.ornamentSection {*/
+/*  background-image: url("/img/logo.svg");*/
+/*  background-position: right -2em top 2em;*/
+/*  background-repeat: no-repeat,no-repeat;*/
+/*  border-bottom: 50px solid transparent;*/
+/*  border-top: 50px solid transparent;*/
+/*}*/
+
+.ornamentSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.ornamentSection::before {
+  content: "";
+  position: absolute;
+  width: 175%;
+  height: 200%;
+  top: -5%;
+  left: -50%;
+  z-index: -1;
+  background: url(/img/logo.svg) 0 0 repeat no-repeat;
+  filter: grayscale(50%);
+  opacity: 0.2;
+  transform: rotate(15deg);
+}
+
+.singleItemSection {
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 52px;
+  margin: 0 auto;
+  max-width: 971px;
+  text-align: center;
+}
+
+.sectionSideBySide {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+
+.sideBySideContent {
+  flex: 0 1 550px;
+  min-width: 350px;
+  display: block;
+  position: relative;
+}
+
+.sideBySideReversed {
+  flex-direction: row-reverse;
+}
+
+.sideBySideContentText {
+  margin-top: 20px;
+}
+
+.sectionFigure {
+  max-width: 50em;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+
+.textBlock{
+  width: 30em;
+  justify-content: center;
+}

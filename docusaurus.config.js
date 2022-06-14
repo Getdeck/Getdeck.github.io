@@ -16,7 +16,13 @@ const config = {
   organizationName: 'Getdeck',
   projectName: 'getdeck',
   deploymentBranch: 'main',
-
+  scripts: [
+    {
+      src: "https://buttons.github.io/buttons.js",
+      async: true,
+      defer: true,
+    },
+  ],
   presets: [
     [
       'classic',
