@@ -168,8 +168,8 @@ export default function Home() {
                                     provider or source compiler. We are more than happy to receive all kinds of feedback and contributions.
                                 </p>
                             </center>
-                            <GitHubButton href="https://github.com/Getdeck/getdeck" data-size="large" data-show-count="true" aria-label="Star Getdeck on GitHub">Star</GitHubButton>
-                            <GitHubButton href="https://github.com/Getdeck/getdeck/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue Getdeck/getdeck on GitHub">Issue</GitHubButton>
+                            <GitHubButton href="https://github.com/Getdeck/getdeck" data-size="large" data-show-count="true" aria-label="Star Getdeck on GitHub">Star Getdeck on Github</GitHubButton>
+                            <GitHubButton href="https://github.com/Getdeck/getdeck/issues" data-icon="octicon-issue-opened" data-size="large" data-show-count="true" aria-label="Issue Getdeck/getdeck on GitHub">Issues</GitHubButton>
                         </div>
                     </div>
                 </section>
