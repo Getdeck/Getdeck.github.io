@@ -22,7 +22,7 @@ If you want to run an [Epinio](https://epinio.io) on your local machine, just ru
 ```bash
 deck get https://raw.githubusercontent.com/Getdeck/wharf/main/epinio/deck.yaml
 ```
-Please follow the _notes_ to find out how to get started with this deck.  
+Please follow the _notes_ to find out how to get started with this Deck.  
 Required `deck`  version: **0.6.0+**
 
 
@@ -32,12 +32,26 @@ If you want to run an [OpenFaaS](https://www.openfaas.com/) on your local machin
 ```bash
 deck get https://raw.githubusercontent.com/Getdeck/wharf/main/openfaas/deck.yaml
 ```
-Please follow the _notes_ to find out how to get started with this deck.  
+Please follow the _notes_ to find out how to get started with this Deck.  
 Required `deck`  version: **0.6.0+**
 
 
+## NFS Storage Provisioner
+
+If you want to use a [ReadWriteMany (RWX)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+storage class with [NFS](https://en.wikipedia.org/wiki/Network_File_System) in your application, just run:
+```bash
+deck get https://raw.githubusercontent.com/Getdeck/wharf/main/nfs/deck.yaml
+```
+
+You can add your workload and mount a PVC with `storageClassName: wharf-nfs`.
+
+Please follow the _notes_ to find out how to get started with this Deck.  
+Required `deck`  version: **0.8.2+**
+
+
 ## Django
-The following decks are running a typical django stack with PostgresSQL
+The following Decks are running a typical django stack with PostgresSQL
 (using [Zalando's PostgreSQL Operator](https://postgres-operator.readthedocs.io/en/latest/)).
 
 ### django-hurricane
@@ -45,5 +59,5 @@ If you want to run the [spacecrafts](https://django-hurricane.io/basic-app/) dem
 ```bash
 deck get https://raw.githubusercontent.com/Getdeck/wharf/main/django/deck.yaml
 ```
-Please follow the _notes_ to find out how to get started with this deck.  
+Please follow the _notes_ to find out how to get started with this Deck.  
 Required `deck`  version: **0.6.0+**
