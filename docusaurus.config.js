@@ -129,6 +129,10 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
     }),
 };
 
