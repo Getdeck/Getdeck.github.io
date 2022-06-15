@@ -13,6 +13,8 @@ be checked regularly in order to prevent a _dependency drift_ and to make sure t
 If you want to add a Deckfile for another Kubernetes-based development stack, feel free to create a pull request on 
 GitHub.
 
+<a class="button button--secondary button--lg button--external" target="_blank" href="https://github.com/Getdeck/wharf/issues/new?assignees=&labels=enhancement&template=deckfile-request.md&title=%5BDeckfile+request%5D%3A+">Create a Deckfile request</a>
+
 
 ## Epinio
 
