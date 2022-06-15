@@ -59,7 +59,7 @@ export default function Home() {
                         <p className={clsx(styles.sideBySideContentText)}>
                             Getdeck <strong>installs and silently manages</strong> different Kubernetes distributions for local and remote development scenarios.
                             There is an option for all flavors and requirements. And the best: developers don't even have to know the existence
-                            of these tools nor do they have to know how to set up a cluster.
+                            of these tools, nor do they have to know how to set up a cluster.
                         </p>
                         <Link
                             className="button button--secondary button--lg"
@@ -78,7 +78,7 @@ export default function Home() {
                             Leverage a simple yet comprehensive workflow to rollout Kubernetes-based development and testing
                             environments. Eliminate project onboarding time and let developers work with Kubernetes while
                             providing a docker-compose experience. Getdeck <strong>handles all the tools</strong> so developers don't have to.
-                            Finally set the development mindset for service-oriented architectures.  Getdeck is the building block for your Kubernetes-based development strategy.
+                            Finally, set the development mindset for service-oriented architectures.  Getdeck is the building block for your Kubernetes-based development strategy.
                         </p>
                         <Link
                             className="button button--secondary button--lg"
@@ -108,7 +108,7 @@ export default function Home() {
                         <h3 className={clsx(styles.sectionHeading)}>Flexible <strong>workload origins</strong> & standard components</h3>
                         <p className={clsx(styles.sideBySideContentText)}>
                             Whether mono-repo or distributed across many different sources: Getdeck easily compiles development workloads
-                            from all kind of sources. Users of Getdeck don't need to know anything about <i>Helm</i>, <i>Kustomize</i> or even how to
+                            from all kinds of sources. Users of Getdeck don't need to know anything about <i>Helm</i>, <i>Kustomize</i> or even how to
                             apply a workload descriptor with <i>kubectl</i>.
                         </p>
                     </div>
@@ -140,9 +140,9 @@ export default function Home() {
                     <div className={clsx(styles.sideBySideContent)}>
                         <h3 className={clsx(styles.sectionHeading)}>Enjoy well-tested Kubernetes <strong>standard stacks</strong></h3>
                         <p className={clsx(styles.sideBySideContentText)}>
-                            Getdeck Wharf is a collection of of common tech stacks or advanced components running in Kubernetes.
+                            Getdeck Wharf is a collection of common tech stacks or advanced components running in Kubernetes.
                             Feel free to use the Deckfiles from the wharf for your local development. The well-crafted development
-                            setups in the wharf will be checked regularly in order to prevent a dependency drift and to make sure they are working.
+                            setups in the wharf will be checked regularly to prevent a dependency drift and ensure they are working.
                         </p>
                         <Link
                             className="button button--secondary button--lg"
@@ -162,9 +162,9 @@ export default function Home() {
                             <br/>
                             <center>
                                 <p className={clsx(styles.textBlock)}>
-                                    We decided to make this project open-source to inspire others of our idea: making Kubernetes a development
+                                    We decided to make this project open-source to inspire others with our idea: making Kubernetes a development
                                     platform. <br/>
-                                    You can easily give Getdeck a go, if something does not work open up an issue. Implement another Kubernetes
+                                    You can easily give Getdeck a go. If something does not work, open up an issue. Implement another Kubernetes
                                     provider or source compiler. We are more than happy to receive all kinds of feedback and contributions.
                                 </p>
                             </center>
