@@ -158,7 +158,7 @@ export default function Home() {
                 <section>
                     <div className={clsx(styles.singleItemSection, styles.section)}>
                         <div className={clsx(styles.center)}>
-                            <h3 className={clsx(styles.sectionHeading)}><strong>Open and Free Community</strong><br/> Based Software</h3>
+                            <h3 className={clsx(styles.sectionHeading)}><strong>Open and free community</strong><br/> based software</h3>
                             <br/>
                             <center>
                                 <p className={clsx(styles.textBlock)}>
