@@ -147,7 +147,7 @@ export default function Home() {
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs/deckfile/wharf">
-                            Wharf
+                            Go to Wharf
                         </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
