@@ -61,3 +61,18 @@ deck get https://raw.githubusercontent.com/Getdeck/wharf/main/django/deck.yaml
 ```
 Please follow the _notes_ to find out how to get started with this Deck.  
 Required `deck`  version: **0.6.0+**
+
+
+
+
+## Java
+The following Decks are running a Java stack with PostgresSQL
+(using Bitnamis Postgres Charts).
+
+### Polls Example using Spring
+If you want to run a Java example of a simple polls application using Spring, just run
+```bash
+deck get https://raw.githubusercontent.com/Getdeck/wharf/main/java-polls/helm/deck.yaml
+```
+Please follow the _notes_ to find out how to get started with this Deck.  
+Required `deck`  version: **0.8.2+**
