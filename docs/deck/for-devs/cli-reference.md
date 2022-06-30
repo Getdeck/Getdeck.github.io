@@ -19,7 +19,7 @@ Global flags are:
 
 
 # Actions
-The CLI allows to run the following available actions.
+The CLI allows running the following available actions.
 
 ## `deck get`
 Create (or reuse) a Kubernetes cluster and install the selected deck to it. The `Deckfile` parameter 
