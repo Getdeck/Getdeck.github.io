@@ -6,7 +6,7 @@ slug: /deckfile/specs
 ## Intro
 A _Deckfile_ is a declarative file in YAML data-serialization language. It is used to
 * create an ephemeral Kubernetes cluster or provision an existing cluster
-* and to compose several Kubernetes workloads together to create a comprehensive deployment artifact which is close to production 
+* and to compose several Kubernetes workloads together to create a comprehensive deployment artifact that is close to production 
 
 It supports a range of different sources of workloads, such as [Helm](https://helm.sh), 
 [Kustomize](https://kustomize.io/), plain YAML files or directories. Please find more about the concept 
@@ -30,7 +30,7 @@ The default path for a Deckfile is `deck.yaml` at any location. A Deckfile can b
 * from the local file system, e.g. `/my/path/deck.yaml` or simply `.`
 
 Please mind that accessing locations with `deck` always happens with the identity of the local user, i.e. private _git_ repositories
-are reached with the locally available _git_ identities. Same is with _https_ and other protocols.
+are reached with the locally available _git_ identities. The same is with _https_ and other protocols.
 
 ## File header
 A Deckfile always starts with a version number. Currently, version **1** or **latest** is supported as value.
@@ -39,16 +39,16 @@ version: '1'
 ```
 
 ## Cluster definition
-Specify **one** (currently local) Kubernetes cluster for this Deckfile. All decks will be installed to this cluster. It is
+Specify **one** (currently local) Kubernetes cluster for this Deckfile. All decks will be installed in this cluster. It is
 a one-to-one relation between a Deckfile and the specified temporary cluster.  
 Deckfile **must not** have more than one cluster specification.
 
 ### The `cluster` top-level element
 Describe the cluster provisioner or cluster connection. The term _provider_ relates to the supported Kubernetes cluster
-management tool which is used by Getdeck in order to provide a Kubernetes environment.
+management tool, which is used by Getdeck to provide a Kubernetes environment.
 
 #### `provider`
-Valid string values for the `provider` attribute are: `k3d`  
+Valid string values for the `provider` attribute are: `k3d` and `kind`.
 The selected provider will organize the underlying infrastructure to create a cluster based on the supported provider. If
 the provider **is not installed** on the system, `deck` will install it and create the cluster with the given specification.
 
@@ -70,16 +70,14 @@ previously unusable for `deck`.
 Valid object values for the `nativeConfig` are: the YAML-format definition of clusters for the given `provider` attribute.  
 Please refer to the documentation of the Kubernetes providers to understand their structure:
 
-| Provider | Documentation | Remark                                       |  
-|----------|-----------|----------------------------------------------|  
-| `k3d`    | https://k3d.io/v5.3.0/usage/configfile/ | Please check version according to your needs |  
-| `kind`   | https://kind.sigs.k8s.io/docs/user/configuration/ | Please check version according to your needs |  
-
-> Preview: `kind` will become available in one of the upcoming releases of Getdeck
+| Provider | Documentation | Remark                                           |  
+|----------|-----------|--------------------------------------------------|  
+| `k3d`    | https://k3d.io/v5.3.0/usage/configfile/ | Please check the version according to your needs |  
+| `kind`   | https://kind.sigs.k8s.io/docs/user/configuration/ | Please check the version according to your needs   |
 
 
-### Cluster definition example
-The following example shows the definition of a `k3d` cluster creatinf a _Kubernetes 1.22_ cluster with the _http port_
+### Cluster definition example - k3d
+The following example shows the definition of a `k3d` cluster creating a _Kubernetes 1.22_ cluster with the _http port_
 mapped to localhost port _8080_. In addition, port _31820_ is mapped from a Kubernetes `NodePort` service (data plane node) 
 to localhost port _31820_ using the _UDP_ protocol.
 
@@ -105,10 +103,41 @@ cluster:
           - agent[0]
 [...]
 ```
-
+### Cluster definition example - kind
+This example shows the definition of a `kind` cluster creating a _Kubernetes_ cluster with the similar configurations as
+in the previous example.
+It is important to note, that `kubeadmConfigPatches` with `node-labels: "ingress-ready=true"` is an essential for a
+working ingress configuration.
+```yaml
+[...]
+# the cluster configuration across all decks
+cluster:
+  provider: kind
+  minVersion: 0.14.0
+  name: another-cluster
+  nativeConfig: # content of the native config file (e.g. https://kind.sigs.k8s.io/docs/user/configuration/)
+    apiVersion: kind.x-k8s.io/v1alpha4
+    kind: Cluster
+    nodes:
+      - role: control-plane
+        kubeadmConfigPatches:
+        - |
+          kind: InitConfiguration
+          nodeRegistration:
+            kubeletExtraArgs:
+              node-labels: "ingress-ready=true"
+        extraPortMappings:
+          - containerPort: 80
+            hostPort: 8080
+          - containerPort: 31820
+            hostPort: 31820
+            protocol: udp
+      - role: worker
+[...]
+```
 
 ## Deck specification
-Specify one or more decks which can be provisioned with `deck`. Users of `deck` will be able to list decks of a Deckfile
+Specify one or more decks that can be provisioned with `deck`. Users of `deck` will be able to list decks of a Deckfile
 and install (the [`deck get` operation](/docs/deck/for-devs/cli-reference#deck-get)) it accordingly.
 
 > For more information about the concept of Deck, check out [What is a Deck?](/docs/deck)
@@ -116,18 +145,18 @@ and install (the [`deck get` operation](/docs/deck/for-devs/cli-reference#deck-g
 ### The `decks` top-level element
 The `decks` attribute contains a list of deck definitions.
 
-> Preview: a `hosts` attribute may contain the required local domains (for example `my-domain.example`) which are 
+> Preview: a `hosts` attribute may contain the required local domains (for example `my-domain.example`), which are 
 > managed (added and removed) in the _hosts_ of the local system resolver, i.e. (`/etc/hosts` on Linux hosts).
 
 ### The `deck` definition
-A deck specification consists of meta information about the deck and the required sources to provision this deck.
+A deck specification consists of meta-information about the deck and the required sources to provision this deck.
 
 #### `name`
 Valid string values for the `name` attribute are: an arbitrary name for the deck.  
 The name of the deck must be unique for this Deckfile.
 
 #### `namespace`
-Valid string values for the `namespace` attribute are: an arbitrary name for the Kubernetes namespace which is
+Valid string values for the `namespace` attribute are: an arbitrary name for the Kubernetes namespace, which is
 also a valid namespace identifier. For more information please check the Kubernetes 
 documentation on [namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
 
@@ -143,7 +172,7 @@ Valid object values for the `sources` attribute are: a list of valid [source](#s
 ### Example of a deck specification
 This example will install the deck `k8s-dashboard` coming with the [official Kubernetes dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 to the namespace `mynamespace` (which is created if it does not exist). The _Helm charts_ are rendered locally and installed
-to the cluster. In addition, with a plain YAML file granting the required cluster privileges, the dashboard will be able to 
+in the cluster. In addition, with a plain YAML file granting the required cluster privileges, the dashboard will be able to 
 access all Kubernetes resources. Finally, the dashboard will be available under `dashboard.127.0.0.1.nip.io` on the published
 port on the local system.
 ```yaml
@@ -193,9 +222,9 @@ A `source` specifies the origin of Kubernetes workloads for different kinds. Dep
 a deck can consist of one to an almost unlimited number of sources and mixed types. 
 
 #### type
-Valid string values for the `type` attribute are: `helm`, `file`
+Valid string values for the `type` attribute are: `helm`, `file`.
 
-> Preview: in upcoming releases of Getdeck, the Deckfile will support sources of type `kustomize` and `directory`, too.
+> Preview: in upcoming releases of Getdeck, the Deckfile will support sources of type `kustomize` and `directory` too.
 
 Depending on the `type` attribute, `deck` will choose a different mechanism to prepare the workload for the Kubernetes
 cluster.
