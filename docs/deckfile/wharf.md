@@ -50,6 +50,16 @@ Please follow the _notes_ to find out how to get started with this Deck.
 Required `deck`  version: **0.8.2+**
 
 
+## Loki
+
+If you want to run a Kubernetes logging stack consisting of [Loki](https://grafana.com/oss/loki/), [Promtail](https://grafana.com/docs/loki/latest/clients/promtail/) and [Grafana](https://grafana.com/) on your local machine, just run:
+```bash
+deck get https://raw.githubusercontent.com/Getdeck/wharf/main/loki/deck.yaml
+```
+Please follow the _notes_ to find out how to get started with this Deck.  
+Required `deck`  version: **0.8.2+**
+
+
 ## Django
 The following Decks are running a typical django stack with PostgresSQL
 (using [Zalando's PostgreSQL Operator](https://postgres-operator.readthedocs.io/en/latest/)).
