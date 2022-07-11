@@ -92,7 +92,7 @@ cluster:
     apiVersion: k3d.io/v1alpha2
     kind: Simple
     servers: 1 # same as `--servers 1`
-    agents: 1 # same as `--agents 2`
+    agents: 1 # same as `--agents 1`
     image: rancher/k3s:v1.22.4-k3s1 # same as `--image rancher/k3s:v1.20.4-k3s1`
     ports:
       - port: 8080:80
