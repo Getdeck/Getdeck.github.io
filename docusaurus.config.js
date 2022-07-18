@@ -13,6 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  trailingSlash: true,
   organizationName: 'Getdeck',
   projectName: 'getdeck',
   deploymentBranch: 'main',
@@ -95,15 +96,15 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/docs/deck/intro',
+                to: '/docs/deck/intro/',
               },
               {
                 label: 'Deckfile',
-                to: '/docs/deckfile/specs',
+                to: '/docs/deckfile/specs/',
               },
               {
                 label: 'CLI Reference',
-                to: '/docs/deck/for-devs/cli-reference',
+                to: '/docs/deck/for-devs/cli-reference/',
               },
             ],
           },
