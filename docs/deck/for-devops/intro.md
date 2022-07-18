@@ -8,5 +8,5 @@ Things that do not work as expected in a local Kubernetes-based development envi
 _integration_ or _production_, too. However, developers main task is writing code, not dealing with complex operations (or
 cloudy) infrastructure.   
 Getdeck is here to lower the access for developers to set up Kubernetes-based development
-infrastructure and hence make your life easier, too. Simply put some effort in providing [Deckfiles](/docs/deckfile/specs)
+infrastructure and hence make your life easier, too. Simply put some effort in providing [Deckfiles](/docs/deckfile/specs/)
 to your development teams.

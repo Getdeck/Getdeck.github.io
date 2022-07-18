@@ -17,12 +17,12 @@ existing Kubernetes workloads.
 > Kubernetes workloads, why don't you use (at least parts of it) these for development, too?
 
 ### Are you a developer?
-You understand your main task in writing code? - follow along [the developer-specific introduction](for-devs/intro).
+You understand your main task in writing code? - follow along [the developer-specific introduction](/docs/deck/for-devs/intro/).
 
 
 ### Are you a DevOps?
 You know all the things Kubernetes or want to provide service to your developers? - 
-follow along [the DevOps specific introduction](for-devops/intro).
+follow along [the DevOps specific introduction](/docs/deck/for-devops/intro/).
 
 
 
