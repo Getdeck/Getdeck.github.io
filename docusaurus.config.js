@@ -38,7 +38,6 @@ const config = {
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
-          trailingSlash: true,
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
