@@ -2,8 +2,7 @@
 title: Wharf
 ---
 ![Getdeck Wharf Logo](/img/wharf-logo.png)
-<br/>
-<br/>
+<hr/>
 
 # Getdeck Wharf
 

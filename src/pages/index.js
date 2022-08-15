@@ -19,7 +19,7 @@ function HomepageHeader() {
                         <Link
                             className="button button--secondary button--lg"
                             style={{"margin-right": "20px"}}
-                            to="/docs/intro">
+                            to="/docs/intro/">
                             Introduction
                         </Link>
 
@@ -63,7 +63,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deckfile-specs#cluster-definition">
+                            to="/docs/deckfile-specs/#nativeconfig">
                             Supported Kubernetes Distros
                         </Link>
                     </div>

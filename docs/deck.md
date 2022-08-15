@@ -1,8 +1,9 @@
 ---
 sidebar_position: 2
+slug: what-is-a-deck
+title: What is a Deck?
 ---
 
-# What is a Deck?
 Deck is a new concept coming with **Getdeck**. A simple attempt to explain it would be:
 
 > A Deck is the smallest installable unit in Getdeck

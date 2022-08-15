@@ -1,7 +1,8 @@
 ---
+title: Deckfile specification
 sidebar_position: 7
 ---
-# Deckfile specification
+
 ## Intro
 A _Deckfile_ is a declarative file in YAML data-serialization language. It is used to
 * create an ephemeral Kubernetes cluster or provision an existing cluster
@@ -9,7 +10,7 @@ A _Deckfile_ is a declarative file in YAML data-serialization language. It is us
 
 It supports a range of different sources of workloads, such as [Helm](https://helm.sh), 
 [Kustomize](https://kustomize.io/), plain YAML files or directories. Please find more about the concept 
-of a [Deck for development here](/docs/deck).
+of a [Deck for development here](/docs/what-us-a-deck).
 
 > If you are not familiar with classic Kubernetes configuration files, here is the [Declarative Management of Kubernetes Objects Using Configuration Files](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/) guide.
 
@@ -20,7 +21,7 @@ of a [Deck for development here](/docs/deck).
 The Deckfile defines [a Kubernetes cluster configuration](#cluster-specification) and a number [of named decks](#decks-specification).
 
 ## State of this document
-This Deckfile specification is implemented by [`deck` **0.7.0+**](/docs/deck/installation). The distribution of this document is unlimited.
+This Deckfile specification is implemented by [`deck` **0.7.0+**](/docs/installation). The distribution of this document is unlimited.
 
 ## Deckfile location
 The default path for a Deckfile is `deck.yaml` at any location. A Deckfile can be loaded from a variety of locations:
@@ -138,7 +139,7 @@ cluster:
 
 ## Deck specification
 Specify one or more decks that can be provisioned with `deck`. Users of `deck` will be able to list decks of a Deckfile
-and install (the [`deck get` operation](/docs/deck/for-devs/cli-reference#deck-get)) it accordingly.
+and install (the [`deck get` operation](/docs/for-devs/cli-reference#deck-get)) it accordingly.
 
 > For more information about the concept of Deck, check out [What is a Deck?](/docs/deck)
 
