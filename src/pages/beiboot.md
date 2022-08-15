@@ -1,0 +1,6 @@
+---
+title: Beiboot
+---
+
+# Getdeck Beiboot
+

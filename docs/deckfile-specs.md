@@ -1,6 +1,5 @@
 ---
-sidebar_position: 1
-slug: /deckfile/specs
+sidebar_position: 7
 ---
 # Deckfile specification
 ## Intro

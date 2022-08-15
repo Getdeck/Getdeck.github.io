@@ -1,8 +1,7 @@
 ---
-sidebar_position: 2
-slug: /deckfile/wharf
+title: Wharf
 ---
-# Wharf
+# Getdeck Wharf
 
 The `Wharf` of Getdeck is a collection of common tech stacks or advanced components running in Kubernetes. Feel free
 to use the Deckfiles from the wharf for your local development. The well-crafted development setups in the wharf will 
@@ -14,7 +13,8 @@ If you want to add a Deckfile for another Kubernetes-based development stack, fe
 GitHub.
 
 <a class="button button--secondary button--lg button--external" target="_blank" href="https://github.com/Getdeck/wharf/issues/new?assignees=&labels=enhancement&template=deckfile-request.md&title=%5BDeckfile+request%5D%3A+">Create a Deckfile request</a>
-
+<br/>
+<br/>
 
 ## Epinio
 

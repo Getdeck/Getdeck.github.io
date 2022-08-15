@@ -60,6 +60,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'If you like Getdeck, please give us a ⭐ star on <a target="_blank" href="https://github.com/Getdeck/getdeck/">GitHub</a> and support this project.',
+        backgroundColor: '#ebedf0',
+        textColor: '#1c1e21',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Getdeck',
         logo: {
@@ -69,20 +77,41 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'deck/intro',
+            docId: 'intro',
             position: 'left',
             label: 'Docs',
           },
           {
-            type: 'doc',
-            docId: 'deckfile/deckfile-specs',
+            docId: '/for-devs/cli-reference',
+            to: '/docs/for-devs/cli-reference/',
+            position: 'left',
+            label: 'CLI',
+            className: 'navbar-icon-menu',
+          },
+          {
+            docId: 'deckfile-specs',
+            to: '/docs/deckfile-specs/',
             position: 'left',
             label: 'deck.yaml',
             className: 'navbar-icon-menu',
           },
           {
+            docId: 'pages/beiboot',
+            position: 'left',
+            label: 'Beiboot',
+            to: '/beiboot',
+            className: 'navbar-icon-menu',
+          },
+          {
+            docId: 'pages/wharf',
+            position: 'left',
+            label: 'Wharf',
+            to: '/wharf',
+            className: 'navbar-icon-menu',
+          },
+          {
             href: 'https://github.com/Getdeck/getdeck',
-            label: 'GitHub',
+            label: 'Getdeck on GitHub',
             position: 'right',
           },
         ],
@@ -95,15 +124,15 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/docs/deck/intro/',
+                to: '/docs/intro/',
               },
               {
                 label: 'Deckfile',
-                to: '/docs/deckfile/specs/',
+                to: '/docs/deckfile-specs/',
               },
               {
                 label: 'CLI Reference',
-                to: '/docs/deck/for-devs/cli-reference/',
+                to: '/docs/for-devs/cli-reference/',
               },
             ],
           },
@@ -111,8 +140,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'GitHub',
+                label: 'Getdeck',
                 href: 'https://github.com/Getdeck/getdeck',
+              },
+              {
+                href: 'https://github.com/Getdeck/beiboot',
+                label: 'Beiboot',
+              },
+              {
+                href: 'https://github.com/Getdeck/wharf',
+                label: 'Wharf',
               },
             ],
           },

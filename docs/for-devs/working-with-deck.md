@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 # Working with Decks and the CLI
-A [Deckfile](/docs/deckfile/specs) can be understood similar to what a `docker-compose` file is doing for a developer.
+A [Deckfile](/docs/deckfile-specs/) can be understood similar to what a `docker-compose` file is doing for a developer.
 It creates a development infrastructure, usually with multiple services, e.g. databases, full-text search indexes
 and applications. However, in opposite to a docker-compose file, a Deckfile creates that infrastructure based on a real
 Kubernetes cluster (not just `docker run ...` with some on-top convenience).  
@@ -18,7 +18,7 @@ setups becomes a breeze.
 Of course, there are countless numbers of development setups, requirements and moving parts in production. However, Getdeck
 is designed to be as versatile as possible for different use-case scenarios.
 Let's assume you want to provide a common Kubernetes-based tech stack on your machine. Either you find what you need
-in Getdeck's [Wharf](/docs/deckfile/wharf), or you have to write your own Deckfile.  
+in Getdeck's [Wharf](/wharf/), or you have to write your own Deckfile.  
 **Important:** If you find a popular stack missing in    Wharf, please consider adding it with a 
 [_Pull Request_ on Github](https://github.com/Getdeck/wharf).  
 

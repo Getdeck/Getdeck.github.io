@@ -23,4 +23,4 @@ To clean it up (i.e. remove the cluster), just run the following command:
 deck remove --cluster https://github.com/gefyrahq/gefyra-demos.git
 ```
 
-Now go and write your own [Deckfile](/docs/deckfile/specs) or select a suitable from the [Wharf](/docs/deckfile/wharf).
+Now go and write your own [Deckfile](/docs/deckfile-specs/) or select a suitable from the [Wharf](/wharf/).
