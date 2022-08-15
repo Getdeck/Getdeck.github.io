@@ -38,7 +38,7 @@ version: '1'
 ```
 
 ## Cluster definition
-Specify **one** (currently local) Kubernetes cluster for this Deckfile. All decks will be installed in this cluster. It is
+Specify **one** Kubernetes cluster for this Deckfile. All decks will be installed in this cluster. It is
 a one-to-one relation between a Deckfile and the specified temporary cluster.  
 Deckfile **must not** have more than one cluster specification.
 
@@ -73,6 +73,7 @@ Please refer to the documentation of the Kubernetes providers to understand thei
 |----------|-----------|--------------------------------------------------|  
 | `k3d`    | https://k3d.io/v5.3.0/usage/configfile/ | Please check the version according to your needs |  
 | `kind`   | https://kind.sigs.k8s.io/docs/user/configuration/ | Please check the version according to your needs   |
+| `beiboot` | https://getdeck.dev/beiboot/ | Please check the version according to your needs   |
 
 
 ### Cluster definition example - k3d

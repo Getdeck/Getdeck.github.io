@@ -2,9 +2,7 @@
 sidebar_position: 1
 ---
 
-# Getdeck Documentation
-
-## Introduction
+# Introduction
 
 **Getdeck** is a command-line application (`deck`) and file specification (`Deckfile`) around the concept of a 
 Kubernetes _Deck_. If you want to know more about the concept itself, head over 
@@ -17,12 +15,12 @@ existing Kubernetes workloads.
 > Kubernetes workloads, why don't you use (at least parts of it) these for development, too?
 
 ### Are you a developer?
-You understand your main task in writing code? - follow along [the developer-specific introduction](/docs/deck/for-devs/intro/).
+You understand your main task in writing code? - follow along [the developer-specific introduction](/docs/for-devs/intro/).
 
 
 ### Are you a DevOps?
 You know all the things Kubernetes or want to provide service to your developers? - 
-follow along [the DevOps specific introduction](/docs/deck/for-devops/intro/).
+follow along [the DevOps specific introduction](/docs/for-devops/intro/).
 
 
 
@@ -32,6 +30,7 @@ The following features are currently the scope of Getdeck:
 * Roll out different Kubernetes-cluster on local development machines: 
   * [`k3d`](https://k3d.io)
   * [`kind`](https://kind.sigs.k8s.io/)
+  * [`beiboot`](/beiboot/)
   * Remote clusters
 * Define local Kubernetes environment using different source types for workloads:
   * [`Helm`](https://helm.sh/), including many supported Helm plugins

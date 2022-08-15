@@ -17,16 +17,16 @@ function HomepageHeader() {
                 <div className={styles.buttons}>
 
                         <Link
-                            className="button button--active button--lg"
+                            className="button button--secondary button--lg"
                             style={{"margin-right": "20px"}}
-                            to="/docs/deck/intro">
+                            to="/docs/intro">
                             Introduction
                         </Link>
 
 
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deck/getting-started">
+                            to="/docs/getting-started/">
                             Getting started
                         </Link>
 
@@ -63,7 +63,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deckfile/specs#cluster-definition">
+                            to="/docs/deckfile-specs#cluster-definition">
                             Supported Kubernetes Distros
                         </Link>
                     </div>
@@ -82,7 +82,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deck/getting-started">
+                            to="/docs/getting-started/">
                             Getting started
                         </Link>
                     </div>
@@ -124,7 +124,7 @@ export default function Home() {
                             <br/>
                             <Link
                                 className={clsx("button button--primary button--lg", styles.center)}
-                                to="/docs/deck/installation">
+                                to="/docs/installation/">
                                 We're open source
                             </Link>
                         </div>
@@ -146,7 +146,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deckfile/wharf">
+                            to="/wharf/">
                             Go to Wharf
                         </Link>
                     </div>
