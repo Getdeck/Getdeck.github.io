@@ -11,6 +11,8 @@ It was born from the idea to provide Getdeck users a simple yet flexible solutio
 hybrid cloud development infrastructure. This is useful for development workloads which grew too large to run on a 
 development machine (or with pony workloads on MacOS and Windows machines).
 
+> Run the other services on a remote Kubernetes cluster and focus on coding.
+
 ## Features
 
 Beiboot offers:

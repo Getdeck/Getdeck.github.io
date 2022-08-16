@@ -1,6 +1,6 @@
 ---
 title: Client API Reference
-sidebar_position: 5
+sidebar_position: 6
 ---
 Getdeck Beiboot allows you to integrate with your own Python scripts using its API. 
 

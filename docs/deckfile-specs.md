@@ -45,7 +45,7 @@ Deckfile **must not** have more than one cluster specification.
 
 ### The `cluster` Top-level Element
 Describe the cluster provisioner or cluster connection. The term _provider_ relates to the supported Kubernetes cluster
-management tool, which is used by GetDeck to provide a Kubernetes environment.
+management tool, which is used by Getdeck to provide a Kubernetes environment.
 
 #### `provider`
 Valid string values for the `provider` attribute are: `k3d`, `kind` and `beiboot`.
@@ -225,7 +225,7 @@ a Deck can consist of one to an almost unlimited number of sources and mixed typ
 #### type
 Valid string values for the `type` attribute are: `helm`, `file`.
 
-> Preview: in upcoming releases of GetDeck, the Deckfile will support sources of type `kustomize` and `directory` too.
+> Preview: in upcoming releases of Getdeck, the Deckfile will support sources of type `kustomize` and `directory` too.
 
 Depending on the `type` attribute, `Deck` will choose a different mechanism to prepare the workload for the Kubernetes
 cluster.

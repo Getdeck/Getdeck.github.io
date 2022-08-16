@@ -9,7 +9,8 @@ There are currently three options available to work with Beiboot clusters:
 
 ## Using `deck` CLI With Provider `beiboot`
 The `deck` CLI from version **0.9.0+** integrated Beiboot as [supported cluster provider](/docs/deckfile-specs/#provider).
-A [Deckfile](/docs/deckfile-specs/) specifying the host cluster and port-mapping is required, too.
+A [Deckfile](/docs/deckfile-specs/) specifying the host cluster and port-mapping is required, too. Please read on
+[how to write a Deckfile using Beiboot](/beiboot/configuration/#usage).
 
 ## Working with `kubectl`
 ### Creating a Logical Kubernetes Cluster
@@ -36,13 +37,13 @@ Once the cluster is ready you can retrieve the _kubeconfig_ from the beiboot obj
 ```bash
 kubectl -n getdeck get bbt cluster-1 --no-headers -o=custom-columns=:.kubeconfig.source | base64 -d > cluster-1.yaml
 ```
-**Important:** Please note that this kubeconfig specifies the server to be reachable at _https://127.0.0.1:6443_. 
+**Important:** Please note that this _kubeconfig_ specifies the server to be reachable at _https://127.0.0.1:6443_. 
 To reach this logical Kubernetes cluster you have to set up a `kubectl port-forward` on your local machine.
 ```bash
 kubectl port-forward -n getdeck-bbt-cluster-1 svc/kubeapi 6443:6443
 ```
 Now, in a different terminal you can set `export KUBECONFIG=<path>/cluster-1.yaml` and you are ready to go. In this terminal 
-session you can now use kubectl just as usual.
+session you can now use _kubectl_ just as usual.
 
 ### Deleting a Logical Kubernetes Cluster
 If you wish to remove the logical Kubernetes cluster, please type:

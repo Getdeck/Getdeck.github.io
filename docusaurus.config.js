@@ -132,8 +132,12 @@ const config = {
                         title: 'Docs',
                         items: [
                             {
-                                label: 'Introduction',
-                                to: '/docs/intro/',
+                                label: 'Introduction for Developers',
+                                to: '/docs/overview/introduction-for-developers/',
+                            },
+                            {
+                                label: 'Introduction for DevOps',
+                                to: '/docs/overview/introduction-for-devops/',
                             },
                             {
                                 label: 'Deckfile',
@@ -141,7 +145,7 @@ const config = {
                             },
                             {
                                 label: 'CLI Reference',
-                                to: '/docs/for-devs/cli-reference/',
+                                to: '/docs/cli-reference/',
                             },
                         ],
                     },
