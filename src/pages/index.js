@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import GitHubButton from 'react-github-btn'
+import GitHubButton from 'react-github-btn';
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
@@ -19,7 +19,7 @@ function HomepageHeader() {
                         <Link
                             className="button button--secondary button--lg"
                             style={{"margin-right": "20px"}}
-                            to="/docs/intro/">
+                            to="/docs/">
                             Introduction
                         </Link>
 
@@ -63,7 +63,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deckfile-specs/#nativeconfig">
+                            to="/docs/supported-kubernetes-distributions/">
                             Supported Kubernetes Distros
                         </Link>
                     </div>

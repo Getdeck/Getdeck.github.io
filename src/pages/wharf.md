@@ -6,11 +6,14 @@ title: Wharf
 
 # Getdeck Wharf
 
+## Intro
+
 The `Wharf` of Getdeck is a collection of common tech stacks or advanced components running in Kubernetes. Feel free
 to use the Deckfiles from the Wharf for your local development. The well-crafted development setups in the Wharf will 
 be checked regularly in order to prevent a _dependency drift_ and to make sure they are working.
 
-[Check it out.](https://github.com/Getdeck/wharf)
+<a class="button button--secondary button--lg button--external" target="_blank" href="https://github.com/Getdeck/wharf">Go to Wharf</a>
+<hr/>
 
 If you want to add a Deckfile for another Kubernetes-based development stack, feel free to create a pull request on 
 GitHub.

@@ -1,8 +1,8 @@
 ---
+title: Getting Started
 sidebar_position: 4
 ---
 
-# Getting Started
 We provide a sophisticated demo project you can deploy locally using `Getdeck`:
 
 ```bash

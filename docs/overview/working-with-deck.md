@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 # Working with Decks and the CLI
 A [Deckfile](/docs/deckfile-specs/) can be understood similar to what a `docker-compose` file is doing for a developer.

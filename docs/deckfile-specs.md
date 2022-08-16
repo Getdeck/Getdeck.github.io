@@ -1,6 +1,6 @@
 ---
-title: Deckfile specification
-sidebar_position: 7
+title: Deckfile Specification
+sidebar_position: 9
 ---
 
 ## Intro
@@ -139,7 +139,7 @@ cluster:
 
 ## Deck specification
 Specify one or more decks that can be provisioned with `deck`. Users of `deck` will be able to list decks of a Deckfile
-and install (the [`deck get` operation](/docs/for-devs/cli-reference#deck-get)) it accordingly.
+and install (the [`deck get` operation](/docs/cli-reference#deck-get)) it accordingly.
 
 > For more information about the concept of Deck, check out [What is a Deck?](/docs/deck)
 

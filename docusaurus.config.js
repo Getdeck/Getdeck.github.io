@@ -90,37 +90,38 @@ const config = {
                 items: [
                     {
                         to: '/docs/',
-                        position: 'left',
+                        position: 'right',
                         label: 'Docs',
                     },
                     {
-                        to: '/docs/for-devs/cli-reference/',
-                        position: 'left',
-                        label: 'CLI',
-                        className: 'navbar-icon-menu',
-                    },
-                    {
-                        to: '/docs/deckfile-specs/',
-                        position: 'left',
-                        label: 'deck.yaml',
-                        className: 'navbar-icon-menu',
-                    },
-                    {
                         to: '/beiboot/',
-                        position: 'left',
+                        position: 'right',
                         label: 'Beiboot',
                         className: 'navbar-icon-menu',
                     },
                     {
-                        position: 'left',
+                        position: 'right',
                         label: 'Wharf',
                         to: '/wharf/',
                         className: 'navbar-icon-menu',
                     },
                     {
+                        to: '/docs/cli-reference/',
+                        position: 'right',
+                        label: 'CLI',
+                        className: 'navbar-icon-menu button button--secondary button--navitem',
+                    },
+                    {
+                        to: '/docs/deckfile-specs/',
+                        position: 'right',
+                        label: 'deck.yaml',
+                        className: 'navbar-icon-menu button button--secondary button--navitem',
+                    },
+                    {
                         href: 'https://github.com/Getdeck/getdeck',
                         label: 'Getdeck on GitHub',
                         position: 'right',
+                        'aria-label': 'GitHub repository',
                     },
                 ],
             },

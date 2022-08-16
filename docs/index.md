@@ -5,7 +5,7 @@ sidebar_position: 1
 
 **Getdeck** is a command-line application (`deck`) and file specification (`Deckfile`) around the concept of a 
 Kubernetes _Deck_. If you want to know more about the concept itself, head over 
-to [the documentation of the concept](/docs/what-is-a-deck) or the [Deckfile specification](/docs/deckfile-specs).
+to [the documentation of the concept](/docs/overview/what-is-a-deck) or the [Deckfile specification](/docs/deckfile-specs).
 Getdeck handles the workflow of providing parts of your existing Kubernetes infrastructure to Developers or
 Testers without having them to be Kubernetes experts, too. Think of Getdeck as the _docker-compose_ for your
 existing Kubernetes workloads.
@@ -14,12 +14,13 @@ existing Kubernetes workloads.
 > Kubernetes workloads, why don't you use (at least parts of it) these for development, too?
 
 ### Are you a developer?
-You understand your main task in writing code? - follow along [the developer-specific introduction](/docs/for-devs/intro/).
+You understand your main task in writing code? - follow along [the developer-specific introduction](/docs/overview/introduction-for-developers/).
 
 
 ### Are you a DevOps?
 You know all the things Kubernetes or want to provide service to your developers? - 
-follow along [the DevOps specific introduction](/docs/for-devops/intro/).
+follow along [the DevOps specific introduction](/docs/in
+tro/).
 
 
 

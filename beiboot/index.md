@@ -1,5 +1,6 @@
 ---
 title: Beiboot Introduction
+sidebar_position: 1
 ---
 
 ![Getdeck Beiboot Logo](/img/beiboot-logo.png)
@@ -14,8 +15,8 @@ development machine (or with pony workloads on MacOS and Windows machines).
 
 Beiboot offers:
 
-* to create a fresh ad-hoc Kubernetes cluster in seconds (much faster than Terraform or your favorite cloud-provider)
-* run isolated workloads within Kubernetes; cheap with the best resource utilization
+* to create a fresh ad-hoc Kubernetes cluster in seconds (much faster than Terraform or Cloud-provider)
+* run isolated workloads within Kubernetes; cheap and with the best resource utilization
 * automatic distribution of _kubeconfig_ and proxied connection on clients (using the _Beiboot client package_)
 * built-in support for [Gefyra](https://gefyra.dev)
 
