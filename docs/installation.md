@@ -1,6 +1,7 @@
 ---
 title: Installation
 sidebar_position: 3
+description: How to install the deck CLI on a development machine
 ---
 
 import Tabs from '@theme/Tabs';

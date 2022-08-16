@@ -1,6 +1,7 @@
 ---
 title: Getting Started
 sidebar_position: 4
+description: Getting started with the deck CLI and a simple Kubernetes environment
 ---
 
 We provide a sophisticated demo project you can deploy locally using `Getdeck`:

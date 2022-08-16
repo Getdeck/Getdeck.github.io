@@ -1,6 +1,7 @@
 ---
 title: Installation
 sidebar_position: 3
+description: How to install the Beiboot operator on the Kubernetes host cluster
 ---
 ## Install Beiboot on the Host Cluster
 You can install the Beiboot operator with this in your host cluster:

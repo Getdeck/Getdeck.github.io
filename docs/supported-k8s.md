@@ -2,6 +2,7 @@
 title: Supported Kubernetes Distributions
 sidebar_position: 5
 slug: supported-kubernetes-distributions
+description: The supported Kubernetes distributions of Getdeck
 ---
 
 ## Managed Kubernetes Providers

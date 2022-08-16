@@ -1,6 +1,7 @@
 ---
 title: Beiboot Introduction
 sidebar_position: 1
+description: What is Getdeck Beiboot and for what is it useful
 ---
 
 ![Getdeck Beiboot Logo](/img/beiboot-logo.png)

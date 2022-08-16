@@ -2,6 +2,7 @@
 title: What is a Deck?
 sidebar_position: 3
 slug: what-is-a-deck
+description: Description of what a Deck is and how it is used for development
 ---
 
 "Deck" is a new concept coming with **Getdeck**. Put in a few words:

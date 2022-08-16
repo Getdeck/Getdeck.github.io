@@ -1,6 +1,7 @@
 ---
 title: Beiboot Client
 sidebar_position: 4
+description: Options for Beiboot to be used from a client
 ---
 There are currently three options available to work with Beiboot clusters:
 1. Using the `deck` CLI with a `beiboot` provider 

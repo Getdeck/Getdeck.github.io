@@ -1,6 +1,7 @@
 ---
 title: Configuration
 sidebar_position: 4
+description: How to configure Beiboot clusters
 ---
 ## Cluster Request for Deckfile
 

@@ -1,6 +1,7 @@
 ---
 title: Deckfile Specification
 sidebar_position: 9
+description: The file reference of a Deckfile
 ---
 
 ## Intro
