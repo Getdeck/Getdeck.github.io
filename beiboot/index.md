@@ -23,10 +23,12 @@ Beiboot offers:
 
 ## Kubernetes-in-Kubernetes
 There are a couple of aspects why a logical ("virtual") Kubernetes cluster running within a physical Kubernetes cluster 
-is beneficial. The main focus currently is spinning up on demand Kubernetes clusters for development and testing 
-purposes, although Beiboot has potential for other scenarios, too (e.g. strong workload isolation, multi-tenancy and 
-security).
-Beiboot comes with a Kubernetes operator which handles the ad-hoc logical clusters based on the requested parameters.
+is beneficial. The main focus is spinning up on demand Kubernetes clusters for development and testing purposes. 
+Although Beiboot has potential for other scenarios, too. For example, strong workload isolation, multi-tenancy, 
+security and more.
+
+Beiboot comes with a Kubernetes operator. It handles the ad-hoc logical clusters based on the requested parameters.
 This includes the Kubernetes version, the way of exposing the cluster, lifetime and so on.
+
 
 ![Beiboot Ops](/img/beiboot-ops.png)

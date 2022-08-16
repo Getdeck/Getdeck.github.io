@@ -4,7 +4,7 @@ sidebar_position: 3
 slug: what-is-a-deck
 ---
 
-"Deck" is a new concept coming with **Getdeck**. A simple attempt to explain it would be:
+"Deck" is a new concept coming with **Getdeck**. Put in a few words:
 
 > A Deck is the smallest installable unit in Getdeck
 

@@ -35,4 +35,4 @@ curl -sSL https://raw.githubusercontent.com/getdeck/getdeck/main/install.sh | sh
 
 # Verify
 
-To make sure everything worked as expected, run `deck version`.
+To make sure everything works as expected, run `deck version`.

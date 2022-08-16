@@ -2,8 +2,14 @@
 title: Getdeck Introduction
 sidebar_position: 1
 ---
+**Getdeck** is an application to create reproducible Kubernetes development infrastructure. Its main focus is on simplicity
+and convenient for the [99% software developers](https://future.com/software-development-building-for-99-developers/).  
 
-**Getdeck** is a command-line application (`deck`) and file specification (`Deckfile`) around the concept of a 
+Getdeck does not interfere with production-close Kubernetes systems. It also does not support production deployments.
+
+<hr/>
+
+Getdeck is a command-line application (`deck`) and file specification (`Deckfile`) around the concept of a 
 Kubernetes _Deck_. If you want to know more about the concept itself, head over 
 to [the documentation of the concept](/docs/overview/what-is-a-deck) or the [Deckfile specification](/docs/deckfile-specs).
 Getdeck handles the workflow of providing parts of your existing Kubernetes infrastructure to Developers or
@@ -19,8 +25,7 @@ You understand your main task in writing code? - follow along [the developer-spe
 
 ### Are you a DevOps?
 You know all the things Kubernetes or want to provide service to your developers? - 
-follow along [the DevOps specific introduction](/docs/in
-tro/).
+follow along [the DevOps specific introduction](/docs/overview/introduction-for-devops/).
 
 
 
