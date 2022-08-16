@@ -1,6 +1,7 @@
 ---
 title: Hello World from Getdeck
-sidebar_position: 1
+sidebar_position: 2
+slug: hello-world-from-getdeck
 ---
 
 <!--- 

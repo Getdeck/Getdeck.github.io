@@ -68,6 +68,15 @@ const config = {
                 sidebarPath: require.resolve('./sidebarsBeiboot.js'),
             },
         ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'guides',
+                path: 'guides',
+                routeBasePath: 'guides',
+                sidebarPath: require.resolve('./sidebarsGuides.js'),
+            },
+        ],
     ],
 
     themeConfig:
@@ -103,6 +112,40 @@ const config = {
                         position: 'right',
                         label: 'Wharf',
                         to: '/wharf/',
+                        className: 'navbar-icon-menu',
+                    },
+                    {
+                        type: 'dropdown',
+                        position: 'right',
+                        label: 'Guides',
+                        className: 'navbar-icon-menu',
+                        items: [
+                                {
+                                  label: 'Hello World From Getdeck',
+                                  to: '/guides/hello-world-from-getdeck/',
+                                },
+                                {
+                                  label: 'Using Helm as a Source',
+                                  to: '/guides/using-helm-as-source/',
+                                },
+                                {
+                                  label: 'Using Kustomize as a Source',
+                                  to: '/guides/using-kustomize-as-source/',
+                                },
+                                {
+                                  label: 'Integrating non-Kubernetes Resources',
+                                  to: '/guides/integrating-non-kubernetes-resources/',
+                                },
+                                {
+                                  label: 'Getdeck together with Gefyra',
+                                  to: '/guides/getdeck-with-gefyra/',
+                                },
+                        ],
+                    },
+                    {
+                        position: 'right',
+                        label: 'About',
+                        to: '/about/',
                         className: 'navbar-icon-menu',
                     },
                     {
@@ -146,6 +189,10 @@ const config = {
                             {
                                 label: 'CLI Reference',
                                 to: '/docs/cli-reference/',
+                            },
+                            {
+                                label: 'Getdeck Guides',
+                                to: '/guides/',
                             },
                         ],
                     },

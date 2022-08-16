@@ -1,10 +1,10 @@
 ---
 title: Wharf
 ---
+# Getdeck Warf
 
 ![Getdeck Wharf Logo](/img/wharf-logo.png)
 <hr/>
-# Getdeck Wharf
 
 ## Intro
 
