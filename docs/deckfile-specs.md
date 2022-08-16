@@ -22,7 +22,7 @@ of a [Deck for development here](/docs/overview/what-is-a-Deck).
 The Deckfile defines [a Kubernetes cluster configuration](#cluster-definition) and a number [of named Decks](#Decks-specification).
 
 ## State of this Document
-This Deckfile specification is implemented by [`deck` **0.7.0+**](/docs/installation). The distribution of this document is unlimited.
+This Deckfile specification is implemented by [`deck` **0.9.3+**](/docs/installation). The distribution of this document is unlimited.
 
 ## Deckfile Location
 The default path for a Deckfile is `deck.yaml` at any location. A Deckfile can be loaded from a variety of locations:
@@ -147,8 +147,6 @@ and install (the [`deck get` operation](/docs/cli-reference#Deck-get)) it accord
 ### The `decks` Top-level Element
 The `decks` attribute contains a list of Deck definitions.
 
-> Preview: a `hosts` attribute may contain the required local domains (for example `my-domain.example`), which are 
-> managed (added and removed) in the _hosts_ of the local system resolver, i.e. (`/etc/hosts` on Linux hosts).
 
 ### The `deck` Definition
 A Deck specification consists of meta-information about the Deck and the required sources to provision this Deck.
@@ -161,6 +159,10 @@ The name of the Deck must be unique for this Deckfile.
 Valid string values for the `namespace` attribute are: an arbitrary name for the Kubernetes namespace, which is
 also a valid namespace identifier. For more information please check the Kubernetes 
 documentation on [namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/).
+
+#### `hosts`
+Valid list items for the `hosts` attribute are: strings containing valid host names to resolve to _127.0.0.1_.
+These host names may be written to the local resolver configuration of the platform (for example _/etc/hosts_).
 
 #### `notes`
 Valid string values for the `notes` attribute are: an arbitrary text to describe this Deck.  
