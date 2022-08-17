@@ -99,24 +99,24 @@ const config = {
                 items: [
                     {
                         to: '/docs/',
-                        position: 'right',
+                        position: 'left',
                         label: 'Docs',
                     },
                     {
                         to: '/beiboot/',
-                        position: 'right',
+                        position: 'left',
                         label: 'Beiboot',
                         className: 'navbar-icon-menu',
                     },
                     {
-                        position: 'right',
+                        position: 'left',
                         label: 'Wharf',
                         to: '/wharf/',
                         className: 'navbar-icon-menu',
                     },
                     {
                         type: 'dropdown',
-                        position: 'right',
+                        position: 'left',
                         label: 'Guides',
                         className: 'navbar-icon-menu',
                         items: [
@@ -140,6 +140,10 @@ const config = {
                                   label: 'Getdeck together with Gefyra',
                                   to: '/guides/getdeck-with-gefyra/',
                                 },
+                                {
+                                  label: 'Developing with Kubernetes',
+                                  to: '/guides/developing-with-kubernetes/',
+                                },
                         ],
                     },
                     {
@@ -150,21 +154,27 @@ const config = {
                     },
                     {
                         to: '/docs/cli-reference/',
-                        position: 'right',
+                        position: 'left',
                         label: 'CLI',
                         className: 'navbar-icon-menu button button--secondary button--navitem',
                     },
                     {
                         to: '/docs/deckfile-specs/',
-                        position: 'right',
+                        position: 'left',
                         label: 'deck.yaml',
                         className: 'navbar-icon-menu button button--secondary button--navitem',
                     },
                     {
                         href: 'https://github.com/Getdeck/getdeck',
-                        label: 'Getdeck on GitHub',
+                        label: 'GitHub',
                         position: 'right',
                         'aria-label': 'GitHub repository',
+                    },
+                    {
+                        href: 'https://unikube.io/',
+                        label: 'Getdeck will become part of Unikube',
+                        position: 'right',
+                        'aria-label': 'Unikube.io website',
                     },
                 ],
             },

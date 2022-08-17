@@ -1,6 +1,7 @@
 ---
 title: Working with Decks and the CLI
 sidebar_position: 4
+description: Basics on how to work with Deckfiles
 ---
 
 ## The Deckfile 
@@ -25,7 +26,12 @@ Let's assume you want to provide a common Kubernetes-based tech stack on your ma
 in Getdeck's [Wharf](/wharf/), or you have to write your own Deckfile.  
 
 **Important:** If you find a popular stack missing in Wharf, please consider adding it with a 
-[_Pull Request_ on Github](https://github.com/Getdeck/wharf).  
+_Pull Request_ on Github.  
+
+<a class="button button--secondary button--lg button--external" target="_blank" href="https://github.com/Getdeck/wharf/issues/new?assignees=&labels=enhancement&template=deckfile-request.md&title=%5BDeckfile+request%5D%3A+">Create a Deckfile request</a>
+
+<br/>
+<br/>
 
 The `deck` CLI can be called with a specific location of a `deck.yaml`, for example `deck get ./deck.yaml`. This
 will create the Kubernetes setup from a local Deckfile in this directory.
