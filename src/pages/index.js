@@ -50,7 +50,7 @@ export default function Home() {
                 <hr/>
                 <section>
                     <div className={clsx(styles.section)}>
-                        <h2 className={clsx(styles.sectionHeading)}>Kubernetes-based development and testing worflows done right.</h2>
+                        <h2 className={clsx(styles.sectionHeading)}>Kubernetes-based development and testing workflows done right.</h2>
                     </div>
                 </section>
                 <section className={clsx(styles.sectionSideBySide)}>

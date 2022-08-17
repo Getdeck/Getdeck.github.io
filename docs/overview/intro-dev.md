@@ -12,7 +12,7 @@ or local _virtualenv_ (of any kind) without using containers, you are not follow
 
 To get a close-to-production development environment, kindly ask your DevOps or operations staff to provide you 
 with a [Deckfile](/docs/deckfile-specs/) (or create it yourself). This will finally remove the troubles in the transition 
-of new Apps, features or bugfixes from development to production. 
+of new Apps, features or bug fixes from development to production. 
 
 <hr/>
 

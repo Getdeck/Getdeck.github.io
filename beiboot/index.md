@@ -3,8 +3,13 @@ title: Beiboot Introduction
 sidebar_position: 1
 description: What is Getdeck Beiboot and for what is it useful
 ---
+<div class="text--center">
+    <img src="/img/beiboot-logo.png" alt="Getdeck Beiboot Logo" width="500"/>
+</div>
+<hr/>
 
-![Getdeck Beiboot Logo](/img/beiboot-logo.png)
+<b>Run the other services on a remote Kubernetes cluster and focus on coding.</b>
+
 <hr/>
 
 Getdeck Beiboot (or just Beiboot for brevity) is a Kubernetes-in-Kubernetes solution. 
@@ -12,7 +17,7 @@ It was born from the idea to provide Getdeck users a simple yet flexible solutio
 hybrid cloud development infrastructure. This is useful for development workloads which grew too large to run on a 
 development machine (or with pony workloads on MacOS and Windows machines).
 
-> Run the other services on a remote Kubernetes cluster and focus on coding.
+
 
 ## Features
 

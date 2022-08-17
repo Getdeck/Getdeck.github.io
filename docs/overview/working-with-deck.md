@@ -8,7 +8,7 @@ description: Basics on how to work with Deckfiles
 A [Deckfile](/docs/deckfile-specs/) can be understood like what a `docker-compose` file is doing for a developer.
 
 It creates a development infrastructure, usually with many services, e.g. databases, full-text search indexes
-and applications. However, in opposite to a docker-compose file, a Deckfile creates that infrastructure based on a real
+and applications. However, in contrast to a docker-compose file, a Deckfile creates that infrastructure based on a real
 Kubernetes cluster (not just `docker run ...` with some on-top convenience).  
 
 > Ideally, the Deckfile for a developer's setup draws the Kubernetes workloads from production(-close) environments. That allows development teams to share the configuration in which a container is finally operated.

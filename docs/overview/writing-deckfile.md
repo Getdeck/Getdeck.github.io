@@ -30,12 +30,12 @@ patterns, such as the side-car pattern. These architectural considerations and i
 so they can work in that context. 
 
 ## Where to Place the Deckfiles?
-It's completely up to the team to decided where to store the Deckfile. 
+It's completely up to the team to decide where to store the Deckfile. 
 
 If you are using a _monorepo_ for the Kubernetes manifests, you may place the Deckfile there two.  
 
 If the Kubernetes workload manifests are distributed across the application repositories, you may find a
 central HTTP server to place the Deckfile. It is not recommended distributing a copy of a central Deckfile across the
-application repositories. In case these Deckfiles require adjustments for each service your are free to place the Deckfile
+application repositories. In case these Deckfiles need adjustments for each service, you are free to place the Deckfile
 beside your application code.
 
