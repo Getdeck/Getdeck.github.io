@@ -69,7 +69,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/provider.png" alt=""/>
+                        <img src="img/provider.png" alt="supported Kubernetes providers"/>
                     </figure>
                 </section>
                 <section className={clsx(styles.sectionSideBySide, styles.sideBySideReversed)}>
@@ -88,7 +88,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/workflow_1.png" alt=""/>
+                        <img src="img/workflow_1.png" alt="workflow of getdeck"/>
                     </figure>
                 </section>
                 <section className={clsx(styles.sectionSideBySide)}>
@@ -101,7 +101,7 @@ export default function Home() {
                         </p>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/locations.png" alt=""/>
+                        <img src="img/locations.png" alt="workload locations Getdeck can work with"/>
                     </figure>
                 </section>
                 <section className={clsx(styles.sectionSideBySide, styles.sideBySideReversed)}>
@@ -114,7 +114,7 @@ export default function Home() {
                         </p>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/workloads.png" alt=""/>
+                        <img src="img/workloads.png" alt="workload options that Getdeck can work with"/>
                     </figure>
                 </section>
                 <hr style={{"margin-bottom": "0"}}/>
@@ -152,7 +152,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/wharf.png" alt=""/>
+                        <img src="img/wharf.png" alt="the Getdeck Wharf logo"/>
                     </figure>
                 </section>
                 <hr/>
