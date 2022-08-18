@@ -18,10 +18,10 @@ Global flags are:
 - `-d, --debug`: add debug output for each action
 
 
-# Actions
+## Actions
 The CLI allows running the following available actions.
 
-## `deck get`
+### `deck get`
 Create (or reuse) a Kubernetes cluster and install the selected Deck to it. The `Deckfile` parameter 
 is the location of `deck.yaml` (or a specific file). It can be a local file system path, `http`, `https` 
 or a `git` repository. If no `--name` is given and there is only one Deck defined in the Deckfile, this one 
@@ -31,10 +31,10 @@ is installed. Otherwise `--name` is mandatory.
 
 **Example:** `deck get https://github.com/gefyrahq/gefyra-demos.git`
 
-### Positional Arguments
+#### Positional Arguments
 `Deckfile` the deck.yaml location (as file, git or https)
 
-### Optional Arguments
+#### Optional Arguments
 
 | Argument                        | Description                                                                                           |
 |:--------------------------------|:------------------------------------------------------------------------------------------------------|
@@ -44,29 +44,29 @@ is installed. Otherwise `--name` is mandatory.
 | `-T TIMEOUT, --timeout TIMEOUT` | Timeout (in seconds, default 120) for the Pods of the Deck to become ready; if exceeded the run fails |
 
 
-## `deck list`
+### `deck list`
 List the available Decks from a given Deckfile.
 
 **Syntax:** `deck list Deckfile`
 
 **Example:** `deck list https://github.com/gefyrahq/gefyra-demos.git`
 
-### Positional Arguments
+#### Positional Arguments
 `Deckfile` the deck.yaml location (as file, git or https)
 
 
-## `deck stop`
+### `deck stop`
 Stop a running cluster for a given Deckfile.
 
 **Syntax:** `deck stop Deckfile`
 
 **Example:** `deck stop https://github.com/gefyrahq/gefyra-demos.git`
 
-### Positional Arguments
+#### Positional Arguments
 `Deckfile` the deck.yaml location (as file, git or https)
 
 
-## `deck remove`
+### `deck remove`
 Remove a Deck from a Kubernetes cluster or remove the entire cluster. If no `--name` is given and
 there is only one Deck defined in the Deckfile, this one is removed. Otherwise `--name` is mandatory.
 
@@ -74,10 +74,10 @@ there is only one Deck defined in the Deckfile, this one is removed. Otherwise `
 
 **Example:** `deck remove --cluster https://github.com/gefyrahq/gefyra-demos.git`
 
-### Positional Arguments
+#### Positional Arguments
 `Deckfile` the deck.yaml location (as file, git or https)
 
-### Optional Arguments
+#### Optional Arguments
 
 | Argument           | Description                                            |
 |:-------------------|:-------------------------------------------------------|
@@ -85,7 +85,7 @@ there is only one Deck defined in the Deckfile, this one is removed. Otherwise `
 |`--cluster` | Remove the entire cluster from the local system        |
 | `-I`, `--no-cluster` | Do not set up the cluster, use current kubectl context |
 
-## `deck hosts`
+### `deck hosts`
 Add the host names from the Deckfile to your local DNS resolve configuration (for example `/etc/hosts/`). 
 If no `--name` is given and there is only one Deck defined in the Deckfile, this one is used. Otherwise `--name` is mandatory.
 Use one of the `host_action` options to either list the specified host names, write or remove them. 
@@ -94,15 +94,15 @@ Use one of the `host_action` options to either list the specified host names, wr
 
 **Example:** `deck hosts write https://github.com/gefyrahq/gefyra-demos.git`
 
-### Positional Arguments
+#### Positional Arguments
 `host_action` The action to perform on the local host: valid is `write`, `remove`  and `list`
 `Deckfile` the deck.yaml location (as file, git or https)
 
-### Optional Arguments
+#### Optional Arguments
 
 | Argument           | Description                                     |
 |:-------------------|:------------------------------------------------|
 | `--name`           | The Deck that you want to run from the Deckfile |
 
-## `deck version`
+### `deck version`
 Print out the current CLI version.
