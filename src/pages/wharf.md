@@ -1,5 +1,6 @@
 ---
 title: Wharf
+description: The Wharf of Getdeck is a collection of common tech stacks or advanced components running in Kubernetes. 
 ---
 # Getdeck Warf
 

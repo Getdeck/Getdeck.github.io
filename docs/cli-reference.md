@@ -1,7 +1,7 @@
 ---
 title: CLI Reference
 sidebar_position: 8
-description: This is the Reference of the deck CLI
+description: This is the reference of the deck CLI
 ---
 ## Syntax
 
