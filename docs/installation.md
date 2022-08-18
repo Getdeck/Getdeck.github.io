@@ -1,12 +1,12 @@
 ---
+title: Installation
 sidebar_position: 3
+description: How to install the deck CLI on a development machine
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
-# Installation
 
 <Tabs>
 <TabItem value="macos" label="MacOS (Universal)" default>
@@ -34,6 +34,8 @@ curl -sSL https://raw.githubusercontent.com/getdeck/getdeck/main/install.sh | sh
 </Tabs>
 		
 
+<hr/>
+
 # Verify
 
-To make sure everything worked as expected, run `deck version`.
+To make sure everything works as expected, run `deck version`.

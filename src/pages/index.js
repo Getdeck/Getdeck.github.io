@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import GitHubButton from 'react-github-btn'
+import GitHubButton from 'react-github-btn';
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
@@ -17,16 +17,16 @@ function HomepageHeader() {
                 <div className={styles.buttons}>
 
                         <Link
-                            className="button button--active button--lg"
+                            className="button button--secondary button--lg"
                             style={{"margin-right": "20px"}}
-                            to="/docs/deck/intro">
+                            to="/docs/">
                             Introduction
                         </Link>
 
 
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deck/getting-started">
+                            to="/docs/getting-started/">
                             Getting started
                         </Link>
 
@@ -50,7 +50,7 @@ export default function Home() {
                 <hr/>
                 <section>
                     <div className={clsx(styles.section)}>
-                        <h2 className={clsx(styles.sectionHeading)}>Kubernetes-based development and testing worflows done right.</h2>
+                        <h2 className={clsx(styles.sectionHeading)}>Kubernetes-based development and testing workflows done right.</h2>
                     </div>
                 </section>
                 <section className={clsx(styles.sectionSideBySide)}>
@@ -63,7 +63,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deckfile/specs#cluster-definition">
+                            to="/docs/supported-kubernetes-distributions/">
                             Supported Kubernetes Distros
                         </Link>
                     </div>
@@ -82,7 +82,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deck/getting-started">
+                            to="/docs/getting-started/">
                             Getting started
                         </Link>
                     </div>
@@ -124,7 +124,7 @@ export default function Home() {
                             <br/>
                             <Link
                                 className={clsx("button button--primary button--lg", styles.center)}
-                                to="/docs/deck/installation">
+                                to="/docs/installation/">
                                 We're open source
                             </Link>
                         </div>
@@ -146,7 +146,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/deckfile/wharf">
+                            to="/wharf/">
                             Go to Wharf
                         </Link>
                     </div>
