@@ -199,11 +199,7 @@ const config = {
                             {
                                 label: 'CLI Reference',
                                 to: '/docs/cli-reference/',
-                            },
-                            {
-                                label: 'Getdeck Guides',
-                                to: '/guides/',
-                            },
+                            }
                         ],
                     },
                     {

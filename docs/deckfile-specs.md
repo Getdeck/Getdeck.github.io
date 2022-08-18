@@ -19,7 +19,7 @@ of a [Deck for development here](/docs/overview/what-is-a-Deck).
 
 > If you are not familiar with Kustomize, check out the  [Declarative Management of Kubernetes Objects Using Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/) guide.
 
-The Deckfile defines [a Kubernetes cluster configuration](#cluster-definition) and a number [of named Decks](#Decks-specification).
+The Deckfile defines [a Kubernetes cluster configuration](#cluster-definition) and a number [of named Decks](#decks-specification).
 
 ## State of this Document
 This Deckfile specification is implemented by [`deck` **0.9.3+**](/docs/installation). The distribution of this document is unlimited.
@@ -140,9 +140,9 @@ cluster:
 
 ## Decks Specification
 Specify one or more Decks that can be provisioned with `deck`. Users of `deck` will be able to list Decks of a Deckfile
-and install (the [`deck get` operation](/docs/cli-reference#Deck-get)) it accordingly.
+and install (the [`deck get` operation](/docs/cli-reference#deck-get)) it accordingly.
 
-> For more information about the concept of Deck, check out [What is a Deck?](/docs/Deck)
+> For more information about the concept of Deck, check out [What is a Deck?](/docs/overview/what-is-a-deck/)
 
 ### The `decks` Top-level Element
 The `decks` attribute contains a list of Deck definitions.
