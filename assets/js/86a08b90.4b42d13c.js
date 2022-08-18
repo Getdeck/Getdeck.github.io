@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgetdeck=self.webpackChunkgetdeck||[]).push([[302],{6037:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"guides"}')}}]);

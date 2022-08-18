@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgetdeck=self.webpackChunkgetdeck||[]).push([[150],{9287:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"beiboot"}')}}]);
