@@ -4,7 +4,11 @@ sidebar_position: 4
 description: Getting started with the deck CLI and a simple Kubernetes environment
 ---
 
-We provide a sophisticated demo project you can deploy locally using `Getdeck`:
+This getting started example will take about 4 minutes of your time.
+
+
+1. [Install the `deck` CLI](/docs/installation/)
+2. Run this command:
 
 ```bash
 deck get https://github.com/gefyrahq/gefyra-demos.git
@@ -18,10 +22,12 @@ You should see a Kubernetes dashboard with some information about the namespace:
 
 We just deployed a whole application using `deck`.
 
-To clean it up (i.e. remove the cluster), just run the following command:
+3. To clean it up (i.e. remove the cluster), just run the following command:
 
 ```bash
 deck remove --cluster https://github.com/gefyrahq/gefyra-demos.git
 ```
+
+<hr/>
 
 Now go and write your own [Deckfile](/docs/deckfile-specs/) or select one from the [Wharf](/wharf/).
