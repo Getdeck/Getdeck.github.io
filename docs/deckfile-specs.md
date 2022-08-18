@@ -11,7 +11,7 @@ A _Deckfile_ is a declarative file in YAML data-serialization language. It is us
 
 It supports a range of different sources of workloads, such as [Helm](https://helm.sh), 
 [Kustomize](https://kustomize.io/), plain YAML files or directories. Please find more about the concept 
-of a [Deck for development here](/docs/overview/what-is-a-Deck).
+of a [Deck for development here](/docs/overview/what-is-a-deck).
 
 > If you are not familiar with classic Kubernetes configuration files, here is the [Declarative Management of Kubernetes Objects Using Configuration Files](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/) guide.
 
