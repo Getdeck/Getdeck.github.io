@@ -43,6 +43,7 @@ export default function Home() {
             title={`Hello from ${siteConfig.title}`}
             description="Getdeck, a CLI that creates reproducible Kubernetes environments for development and testing">
             <HomepageHeader/>
+            <hr/>
             <main>
                 <div>
                     <HomepageFeatures/>
