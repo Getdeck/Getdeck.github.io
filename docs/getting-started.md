@@ -11,7 +11,7 @@ This getting started example will take about 4 minutes of your time.
 2. Run this command:
 
 ```bash
-deck get https://github.com/gefyrahq/gefyra-demos.git
+deck get --name oauth2-demo https://github.com/gefyrahq/gefyra-demos.git
 ```
 
 This might take a few minutes. When it's done, open your browser at
