@@ -26,6 +26,7 @@ definition (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-exte
 Beiboot was tested on the following Kubernetes host clusters:
 * [k3d](https://k3d.io/)
 * [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
+* [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/)
 
 ## Remove Beiboot from the Cluster
 
