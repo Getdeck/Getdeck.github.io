@@ -21,6 +21,15 @@ or part of your default _kubeconfig_ in `~/.kube/config`.
 The `deck` CLI will look for that context and activate it for all operations. It will return an error if the specified 
 context can not be found.
 
+#### `timeouts`
+You can specify the timeouts for the creation of the cluster and the Kubernetes API connection.
+Both values come with reasonable defaults:
+```yaml
+timeouts:
+  api: 30  # in seconds, defaults to 30
+  cluster: 180  # in seconds, defaults to 180
+```
+
 #### `ports`
 Valid list values for the `ports` attribute are: a `port`-object defining a port-mapping.
 The `port: <local port>:<cluster node port>` definition allows to specify a port-mapping from a local port to a
@@ -36,6 +45,9 @@ cluster:
   name: cluster-1
   nativeConfig:
     context: <context-to-host-cluster-running-beiboot>
+    timeouts:
+     api: 30  # in seconds, defaults to 30
+     cluster: 180  # in seconds, defaults to 180
     ports:
       - port: 61346:80
   

@@ -8,7 +8,10 @@ You can install the Beiboot operator with this in your host cluster:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/Getdeck/beiboot/main/operator/manifests/beiboot.yaml
 ```
-(You will need the appropriate permissions apply all resources from this file in the cluster)
+Please notice the following requirements:
+* You will need the appropriate permissions apply all resources from this file in the cluster
+* The cluster must provide Kubernetes API in version >=1.22
+
 
 This following components are created from the file:
 * a _namespace_ called `getdeck`
