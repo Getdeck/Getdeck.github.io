@@ -1,5 +1,7 @@
 ---
 title: Using Kustomize as a Source
-sidebar_position: 4
+sidebar_position: 5
 slug: using-kustomize-as-source
 ---
+
+WIP

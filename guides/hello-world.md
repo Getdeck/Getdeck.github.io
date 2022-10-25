@@ -1,10 +1,10 @@
 ---
 title: Hello World from Getdeck
-sidebar_position: 2
+sidebar_position: 1
 slug: hello-world-from-getdeck
 ---
 
-<!--- 
+<!---
 * I want to see the entire workflow for getting my Hello World service defined in Deck, running in a cluster locally, deployed to a production cluster, and managed in a gitops-style workflow
 * I want to see what the files look like, what commands I'll run, and how it'll all hook together
 * Assume I'm not a k8s expert (I'm not) who can infer how this will work, because I shouldn't need to be to create a basic system
