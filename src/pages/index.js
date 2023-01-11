@@ -20,14 +20,14 @@ function HomepageHeader() {
                             className="button button--secondary button--lg"
                             style={{"margin-right": "20px"}}
                             to="/docs/">
-                            Introduction
+                            Getting started with the CLI
                         </Link>
 
 
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/getting-started/">
-                            Getting started
+                            to="/beiboot/">
+                            Getting started with Beiboot
                         </Link>
 
                 </div>

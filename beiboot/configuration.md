@@ -75,20 +75,25 @@ metadata:
   name: beiboot-config
   namespace: getdeck
 data:
-  apiServerContainerName: '"apiserver"'
+data:
   clusterReadyTimeout: "180"
-  gefyra: '{"enabled": true, "ports": "31820-31920", "endpoint": null}'
-  k3sImage: '"rancher/k3s"'
-  k3sImagePullPolicy: '"IfNotPresent"'
-  k3sImageTag: '"v1.24.3-k3s1"'
-  kubeconfigFromLocation: '"/getdeck/kube-config.yaml"'
-  namespacePrefix: '"getdeck-bbt"'
-  nodeLabels: '{"app": "beiboot", "beiboot": "node"}'
-  nodeResources: '{"requests": {"cpu": "0.5", "memory": "512Mi"}, "limits": {}}'
-  nodeStorageRequests: '"10Gi"'
-  nodes: "3"
-  serverLabels: '{"app": "beiboot", "beiboot": "server"}'
-  serverResources: '{"requests": {"cpu": "1", "memory": "512Mi"}, "limits": {}}'
+  gefyra: '{"enabled": true, "endpoint": null}'
+  k8sVersion: "null"
+  maxLifetime: "null"
+  maxSessionTimeout: "null"
+  namespacePrefix: getdeck-bbt
+  nodeLabels: '{"app": "beiboot", "beiboot.dev/is-node": "true"}'
+  nodeResources: '{"requests": {"cpu": "1", "memory": "1Gi"}, "limits": {}}'
+  nodeStorageRequests: 1Gi
+  nodes: "1"
+  ports: "null"
+  serverLabels: '{"app": "beiboot", "beiboot.dev/is-node": "true", "beiboot.dev/is-server":
+    "true"}'
+  serverResources: '{"requests": {"cpu": "1", "memory": "1Gi"}, "limits": {}}'
   serverStartupTimeout: "60"
-  serverStorageRequests: '"2Gi"'
+  serverStorageRequests: 1Gi
+  shelfStorageClass: standard-rwo
+  storageClass: standard-rwo
+  tunnel: '{"enabled": true, "endpoint": null}'
+
 ```

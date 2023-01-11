@@ -1,6 +1,6 @@
 ---
 title: Gefyra Integration
-sidebar_position: 5
+sidebar_position: 7
 ---
 Beiboot natively integrates with [Gefyra](https://gefyra.dev) for efficient development. The connection parameters
 for Gefyra to connect (upon `gefyra up`) are pulled in automatically from the _kubeconfig_. Make sure you are using

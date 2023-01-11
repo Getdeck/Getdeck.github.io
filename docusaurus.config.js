@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Getdeck",
   tagline:
-    "A CLI that creates reproducible Kubernetes environments for development and testing.",
+    "A tool suite to provide reproducible Kubernetes environments for development and testing.",
   url: "https://getdeck.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",

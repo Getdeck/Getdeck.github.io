@@ -3,10 +3,12 @@ title: Beiboot Client
 sidebar_position: 4
 description: Options for Beiboot to be used from a client
 ---
-There are currently three options available to work with Beiboot clusters:
+There are a couple of options available to work with Beiboot clusters:
 1. Using the `deck` CLI with a `beiboot` provider 
-2. Working with `kubectl` directly
-3. Using the Python client
+2. Using `beibootctl` to manage Beiboot clusters and connect to them
+3. [A REST API](https://github.com/Getdeck/beiboot-api) and a [Desktop application](https://github.com/Getdeck/beiboot-desktop) (both are currently in the making)
+4. Working with `kubectl` directly (just creating and deleting *beiboot* objects)
+5. Using the Python client
 
 ## Using `deck` CLI With Provider `beiboot`
 The `deck` CLI from version **0.9.0+** integrated Beiboot as [supported cluster provider](/docs/deckfile-specs/#provider).
@@ -27,14 +29,14 @@ metadata:
 provider: k3s
 EOF
 ```
-It creates an object of type beiboot. Required fields are `name` and `provider` (currently only _k3s_ is supported).
+It creates an object of type *beiboot*. Required fields are `name` (unique) and `provider` (currently only _k3s_ is supported).
 ```bash
 > kubectl -n getdeck get bbt 
 NAME        AGE
 cluster-1   1m22s
 ```
-The cluster is going to be created in namespace `getdeck-bbt-cluster-1` of the host cluster. 
-Once the cluster is ready you can retrieve the _kubeconfig_ from the beiboot object running:
+The cluster is going to be created in namespace `getdeck-bbt-cluster-1` (with default prefix *getdeck-bbt*) of the host cluster. 
+Once the cluster is ready you can retrieve the _kubeconfig_ from the *beiboot* object running:
 ```bash
 kubectl -n getdeck get bbt cluster-1 --no-headers -o=custom-columns=:.kubeconfig.source | base64 -d > cluster-1.yaml
 ```
@@ -43,8 +45,7 @@ To reach this logical Kubernetes cluster you have to set up a `kubectl port-forw
 ```bash
 kubectl port-forward -n getdeck-bbt-cluster-1 svc/kubeapi 6443:6443
 ```
-Now, in a different terminal you can set `export KUBECONFIG=<path>/cluster-1.yaml` and you are ready to go. In this terminal 
-session you can now use _kubectl_ just as usual.
+Now, in a different terminal, you can set `export KUBECONFIG=<path>/cluster-1.yaml` and you are ready to go. In this terminal session, you can now use _kubectl_ just as usual.
 
 ### Deleting a Logical Kubernetes Cluster
 If you wish to remove the logical Kubernetes cluster, please type:
@@ -55,7 +56,7 @@ and the entire namespace in the host cluster will be gone in a matter of seconds
 
 ## Beiboot Python Client
 ### Task Overview
-Beiboot comes with a dedicated Python package which handles the following client processes:
+Beiboot comes with a dedicated Python package that handles the following client processes:
 * ordering a new Beiboot cluster (with arguments)
 * deleting an existing Beiboot cluter
 * downloading the _kubeconfig_ and saving it to `~/.getdeck/<cluster-name>.yaml`
