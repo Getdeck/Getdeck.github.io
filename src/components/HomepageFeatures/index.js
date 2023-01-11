@@ -18,7 +18,7 @@ const FeatureList = [
         description: (
             <>
                 Find a <i>Deckfile</i> that is describing your setup,
-                run <code>deck get ...</code> and you are ready to work.<br/>
+                run <code>deck get ...</code> and you are ready to work.<br />
                 No Kubernetes knowledge required.
             </>
         ),
@@ -35,13 +35,13 @@ const FeatureList = [
     },
 ];
 
-function Feature({Svg, icon, title, description}) {
+function Feature({ Svg, icon, title, description }) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
             </div>
             <div className="text--center padding-horiz--md">
-                <img src={icon} alt="" height="100px"/>
+                <img src={icon} alt="" height="100px" />
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>

@@ -3,6 +3,8 @@ title: Beiboot Introduction
 sidebar_position: 1
 description: What is Getdeck Beiboot and what is it useful for
 ---
+import Terminal from '@site/src/components/Terminal';
+
 <div class="text--center">
     <img src="/img/beiboot-logo.png" alt="Getdeck Beiboot Logo" width="500"/>
 </div>
@@ -75,6 +77,5 @@ This demo shows the following steps on a GKE host cluster:
 3. Connect to this cluster  
 4. Disconnect and remove the Beiboot cluster  
 
-
-![Beiboot demo](/img/beibootctl-demo.gif)
+<Terminal src="/img/beibootctl-demo.gif" alt="Beiboot demo"/>
 
