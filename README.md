@@ -42,3 +42,6 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Terminal: asciinema to gif
+`agg --theme dracula --idle-time-limit 1 --font-size 20 --speed 2 /tmp/tmp49g2rlpg-ascii.cast Downloads/beibootctl-demo.gif`

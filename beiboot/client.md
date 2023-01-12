@@ -1,5 +1,5 @@
 ---
-title: Beiboot Client
+title: Beiboot Clients
 sidebar_position: 4
 description: Options for Beiboot to be used from a client
 ---

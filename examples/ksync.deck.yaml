@@ -1,0 +1,35 @@
+version: "1"
+
+cluster:
+  provider: kind
+  minVersion: 0.14.0
+  name: ksync-example
+  nativeConfig:
+    apiVersion: kind.x-k8s.io/v1alpha4
+    kind: Cluster
+    nodes:
+      - role: control-plane
+        kubeadmConfigPatches:
+          - |
+            kind: InitConfiguration
+            nodeRegistration:
+              kubeletExtraArgs:
+                node-labels: "ingress-ready=true"
+        extraPortMappings:
+          - containerPort: 80
+            hostPort: 8080
+          - containerPort: 31820
+            hostPort: 31820
+            protocol: udp
+      - role: worker
+
+decks:
+  - name: ksync-example
+    namespace: default
+    notes: |
+      This Deckfile demonstrate how to use Getdeck together with Ksync.
+      Please follow along the getting started guide: https://getdeck.dev/guides/developing-with-kubernetes/#ksync
+      
+    sources:
+      - type: file
+        ref: https://ksync.github.io/ksync/example/app/app.yaml
