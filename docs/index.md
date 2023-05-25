@@ -11,7 +11,7 @@ description: Getdeck is an application to create reproducible Kubernetes develop
 
 <b>Getdeck is an application to create reproducible Kubernetes development infrastructure.</b>
 
-Its main focus is on simplicity and convenience for the [99% software developers](https://future.com/software-development-building-for-99-developers/).  
+The main focus is on simplicity and convenience for the [99% software developers](https://future.com/software-development-building-for-99-developers/).  
 
 Getdeck does not interfere with production-close Kubernetes systems. It also does not support production deployments.
 
