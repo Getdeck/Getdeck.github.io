@@ -5,31 +5,56 @@ import styles from './styles.module.css';
 const FeatureList = [
     {
         icon: 'img/CLI.svg',
-        title: 'Simple to use',
+        title: 'Fast as hell',
         description: (
             <>
-                Just install the binary executable <code>deck</code> and you are good to go.
+                Fresh ad-hoc Kubernetes cluster in seconds (much faster than Terraform or Cloud-providers)<br/><br/>
             </>
         ),
     },
     {
         icon: 'img/ship-wheel.svg',
-        title: 'Like docker-compose for Kubernetes.',
+        title: 'Worry-free',
         description: (
             <>
-                Find a <i>Deckfile</i> that is describing your setup,
-                run <code>deck get ...</code> and you are ready to work.<br />
-                No Kubernetes knowledge required.
+                Automatic management of clusters (via lifetime, inactivity, etc.)<br/><br/>
             </>
         ),
     },
     {
         icon: 'img/icons-big-projects.svg',
-        title: 'All dependencies managed',
+        title: 'Ready when you are',
         description: (
             <>
-                <i>Helm</i>, <i>kustomize</i>, <i>k3d</i>, <i>kubectl</i>? Getdeck manages
-                all dependencies for your setup so you don't have to.
+                Shelve ("snapshot") a running cluster with state and restore them as often as needed.<br/><br/>
+            </>
+        ),
+    },
+    {
+        icon: 'img/icons-big-projects.svg',
+        title: 'Cost efficient',
+        description: (
+            <>
+                Run isolated workloads within Kubernetes; cheap and with the best resource utilization.
+            </>
+        ),
+    },
+    {
+        icon: 'img/icons-big-projects.svg',
+        title: 'Great collaboration',
+        description: (
+            <>
+                Share your cluster and let your code buddy have a quick look.
+            </>
+        ),
+    },
+    {
+        icon: 'img/icons-big-projects.svg',
+        title: 'Easy distribution',
+        description: (
+            <>
+                Automatic distribution of kubeconfig and tunnel connection to clients (using the Beiboot client package)
+
             </>
         ),
     },
