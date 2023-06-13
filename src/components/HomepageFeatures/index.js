@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
     {
-        icon: 'img/CLI.svg',
+        icon: 'img/deadline.svg',
         title: 'Fast as hell',
         description: (
             <>
@@ -13,7 +13,7 @@ const FeatureList = [
         ),
     },
     {
-        icon: 'img/ship-wheel.svg',
+        icon: 'img/sweat.svg',
         title: 'Worry-free',
         description: (
             <>
@@ -22,7 +22,7 @@ const FeatureList = [
         ),
     },
     {
-        icon: 'img/icons-big-projects.svg',
+        icon: 'img/play-button.svg',
         title: 'Ready when you are',
         description: (
             <>
@@ -31,7 +31,7 @@ const FeatureList = [
         ),
     },
     {
-        icon: 'img/icons-big-projects.svg',
+        icon: 'img/budget.svg',
         title: 'Cost efficient',
         description: (
             <>
@@ -40,7 +40,7 @@ const FeatureList = [
         ),
     },
     {
-        icon: 'img/icons-big-projects.svg',
+        icon: 'img/team.svg',
         title: 'Great collaboration',
         description: (
             <>
@@ -49,7 +49,7 @@ const FeatureList = [
         ),
     },
     {
-        icon: 'img/icons-big-projects.svg',
+        icon: 'img/link.svg',
         title: 'Easy distribution',
         description: (
             <>
