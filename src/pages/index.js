@@ -132,9 +132,9 @@ export default function Home() {
                 </section>
                 <section className={clsx(styles.sectionSideBySide)}>
                     <div className={clsx(styles.sideBySideContent)}>
-                        <h3 className={clsx(styles.sectionHeading)}>Exp 3: Test with Production-Like configs: </h3>
+                        <h3 className={clsx(styles.sectionHeading)}>Exp 3: Only pay for active cluster usage: </h3>
                         <p className={clsx(styles.sideBySideContentText)}>
-                            In a cloud-native environment, applications often depend on various external services, such as databases, message queues, or caching systems.<p/><p>Instead of setting up and managing local versions of these services, you can leverage cloud-native services provided by the cloud provider. For example, <strong>you can use managed database services like Amazon RDS or Google Cloud SQL directly in your cloud-based development cluster</strong>. </p>This allows you to test your application against production-like configurations and ensures that your code integrates seamlessly with these services. It also simplifies the development process by reducing the overhead of managing local infrastructure and dependencies.
+                            When your devs use Kubernetes clusters for software development, testing, and staging environments, these clusters can consume significant resources such as CPU, memory, and storage, even when they are not actively being used. This can lead to unnecessary expenses when resources are billed based on usage. <strong><p>Getdeck allows developers to easily work in a dev cluster, save their development state, shut down the cluster and restore the state at a later time.</p></strong> That way no costs are incurred during the times the clusters are not in use. Additionally, the virtual clusters can automatically sunset, for example on a Friday evening and easily be restored on the following Monday.
 
                         </p>
                         <Link
