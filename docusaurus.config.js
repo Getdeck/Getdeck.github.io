@@ -224,8 +224,12 @@ const config = {
                 label: "Beiboot",
               },
               {
-                href: "https://github.com/Getdeck/wharf",
-                label: "Wharf",
+                href: "https://github.com/Getdeck/beiboot-desktop",
+                label: "Getdeck Desktop",
+              },
+              {
+                href: "https://github.com/Getdeck/beiboot-api",
+                label: "Getdeck Api",
               },
             ],
           },
@@ -237,8 +241,8 @@ const config = {
                 href: "https://github.com/gefyrahq/gefyra",
               },
               {
-                label: "Unikube",
-                href: "https://unikube.io",
+                label: "Blueshoe",
+                href: "https://blueshoe.io",
               },
             ],
           },

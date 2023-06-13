@@ -193,11 +193,8 @@ export default function Home() {
                         <p>Getdeck also has potential for other scenarios, i.g. strong workload isolation, multi-tenancy, CI, security and more.
                             It comes with a Kubernetes operator that handles the management of ad-hoc logical clusters based on the requested parameters. This includes the Kubernetes version, the way of exposing the cluster, lifetime and so on.
                         </p>
-                        <Link
-                            className="button button--secondary button--lg"
-                            to="/wharf/">
-                            Go to Wharf
-                        </Link>
+                       
+                    
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
                         <img src="img/beiboot-ops.png" alt="the Getdeck Wharf logo"/>
