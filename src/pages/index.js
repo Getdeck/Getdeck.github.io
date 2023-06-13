@@ -112,14 +112,10 @@ export default function Home() {
                             When developing an application that needs to handle high traffic and scale dynamically, utilizing cloud-based development clusters becomes crucial. By provisioning a Kubernetes cluster in the cloud, you can <strong>simulate real-world scenarios and test the application's performance under heavy loads</strong>. You can easily scale up the cluster, simulate thousands of concurrent users, and analyze how the application handles the increased traffic. <p/> <p>This approach allows you to fine-tune your application's scalability and optimize resource utilization before deploying it to the production environment.</p>
 
                         </p>
-                        <Link
-                            className="button button--secondary button--lg"
-                            to="/docs/supported-kubernetes-distributions/">
-                            Supported Kubernetes Distros
-                        </Link>
+                        
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/provider.png" alt="supported Kubernetes providers"/>
+                        <img src="img/getdeck-simulate.png" alt="simulate the real world"/>
                     </figure>
                 </section>
                 <section className={clsx(styles.sectionSideBySide, styles.sideBySideReversed)}>
@@ -128,14 +124,10 @@ export default function Home() {
                         <p className={clsx(styles.sideBySideContentText)}>
                             <p>Suppose you are working on a feature that requires collaboration with other team members, such as frontend developers, backend engineers, and database administrators. By using cloud-based development clusters, you can <strong>create a shared environment accessible to the entire team</strong>. </p>Each team member can work on their respective components, deploy changes to the cluster, and validate the integration of their code with the overall application. This collaborative approach fosters efficient teamwork, reduces conflicts, and streamlines the development process.
                         </p>
-                        <Link
-                            className="button button--secondary button--lg"
-                            to="/docs/getting-started/">
-                            Getting started
-                        </Link>
+                      
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/workflow_1.png" alt="workflow of getdeck"/>
+                        <img src="img/getdeck-collaborate.png" alt="collaboration with getdeck"/>
                     </figure>
                 </section>
                 <section className={clsx(styles.sectionSideBySide)}>
@@ -145,6 +137,11 @@ export default function Home() {
                             In a cloud-native environment, applications often depend on various external services, such as databases, message queues, or caching systems.<p/><p>Instead of setting up and managing local versions of these services, you can leverage cloud-native services provided by the cloud provider. For example, <strong>you can use managed database services like Amazon RDS or Google Cloud SQL directly in your cloud-based development cluster</strong>. </p>This allows you to test your application against production-like configurations and ensures that your code integrates seamlessly with these services. It also simplifies the development process by reducing the overhead of managing local infrastructure and dependencies.
 
                         </p>
+                        <Link
+                            className="button button--secondary button--lg"
+                            to="/docs/getting-started/">
+                            Getting started
+                        </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
                         <img src="img/locations.png" alt="workload locations Getdeck can work with"/>
