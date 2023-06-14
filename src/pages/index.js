@@ -144,7 +144,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <figure className={clsx(styles.sectionFigure)}>
-                        <img src="img/locations.png" alt="workload locations Getdeck can work with"/>
+                        <img src="img/getdeck-cost-efficiency.png" alt="workload locations Getdeck can work with"/>
                     </figure>
                 </section>
                 
