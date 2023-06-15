@@ -16,7 +16,7 @@ Getdeck is distributed by an Apache-2.0 License.
 This open source project is currently carried out mainly by:
 * [Michael Schilonka](https://www.linkedin.com/in/michael-schilonka/) 
 * [Christian Busch](https://www.linkedin.com/in/buschnt/)
-* and supported by the team of [unikube.io](https://unikube.io)
+* and supported by the team of [Blueshoe GmbH](https://blueshoe.io).
 
 ## Sponsors
 This project is sponsored by [Blueshoe GmbH](https://blueshoe.io).

@@ -1,12 +1,12 @@
 ---
-title: Beiboot Introduction
+title: Getdeck Introduction
 sidebar_position: 1
-description: What is Getdeck Beiboot and what is it useful for
+description: What is Getdeck and what is it useful for
 ---
-import Terminal from '@site/src/components/Terminal';
+
 
 <div class="text--center">
-    <img src="/img/beiboot-logo.png" alt="Getdeck Beiboot Logo" width="500"/>
+    <img src="/img/getdeck-logo.png" alt="Getdeck Logo" width="500"/>
 </div>
 <hr/>
 <b>The Problem</b>
@@ -19,7 +19,7 @@ pipelines.
 
 <b>The Solution</b>  
 
-With Beiboot you only need one host Kubernetes cluster that runs the Getdeck Beiboot operator. Beiboot creates 
+With Getdeck you only need one host Kubernetes cluster that runs the Getdeck Beiboot operator. Beiboot creates 
 Kubernetes clusters as deployments in a matter of seconds. The operator creates several ways to connect to that 
 cluster and makes it simple to get started working with Kubernetes.
 
@@ -70,12 +70,5 @@ Beiboot's client does not only order a cluster based on the given parameters but
 
 ![Beiboot client connection](/img/beiboot-client-connection.png)
 
-## Demo
-This demo shows the following steps on a GKE host cluster:  
-1. Install Beiboot  
-2. Create a Beiboot cluster with 3 nodes and local port *8080* is forwarded to cluster port *80*  
-3. Connect to this cluster  
-4. Disconnect and remove the Beiboot cluster  
 
-<Terminal src="/img/beibootctl-demo.gif" alt="Beiboot demo"/>
 

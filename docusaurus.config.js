@@ -85,7 +85,7 @@ const config = {
       announcementBar: {
         id: "support_us",
         content:
-          'If you like Getdeck, please give us a ⭐ star on <a target="_blank" href="https://github.com/Getdeck/getdeck/">GitHub</a> and support this project.',
+          'If you like Getdeck Desktop, please give us a ⭐ star on <a target="_blank" href="https://github.com/Getdeck/getdeck-desktop/">GitHub</a> and support this project.',
         backgroundColor: "#ebedf0",
         textColor: "#1c1e21",
         isCloseable: false,
@@ -101,6 +101,12 @@ const config = {
             to: "/docs/",
             position: "left",
             label: "Docs",
+          },        
+          {
+            position: "left",
+            label: "Getdeck Desktop",
+            to: "/getdeck-desktop/",
+            className: "navbar-icon-menu",
           },
           // {
           //   to: "/beiboot/",
