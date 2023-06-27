@@ -43,7 +43,7 @@ The following features are currently the scope of Getdeck:
 * Roll out different Kubernetes-cluster on local development machines: 
   * [`k3d`](https://k3d.io)
   * [`kind`](https://kind.sigs.k8s.io/)
-  * [`beiboot`](/beiboot/)
+  * [`beiboot`](/)
   * Remote clusters
 * Define local Kubernetes environment using different source types for workloads:
   * [`Helm`](https://helm.sh/), including many supported Helm plugins
