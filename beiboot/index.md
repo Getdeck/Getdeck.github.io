@@ -9,38 +9,33 @@ description: What is Getdeck and what is it useful for
     <img src="/img/getdeck-logo.png" alt="Getdeck Logo" width="500"/>
 </div>
 <hr/>
-<b>The Problem</b>
+<b>Ad hoc virtual clusters in a few minutes</b>
 
-
-With complex application landscapes, running Kubernetes-based workloads locally becomes infeasible. Swiftly testing applications with different Kubernetes versions can be impossible depending on organizational policies. Spinning up
-a Kubernetes cluster with Terraform or Cloud providers takes to long for a convenient development workflow or CI 
-pipelines.
-
-
-<b>The Solution</b>  
-
-With Getdeck you only need one host Kubernetes cluster that runs the Getdeck Beiboot operator. Beiboot creates 
-Kubernetes clusters as deployments in a matter of seconds. The operator creates several ways to connect to that 
-cluster and makes it simple to get started working with Kubernetes.
-
+Getdeck allows you to spin up virtual kubernetes clusters easily that you can use for development and testing. Getdeck also allows you to save your current development state, tear the cluster down and restore it at a later point in time.
 
 <hr/>
 
 
-Getdeck Beiboot (or just Beiboot for brevity) is a Kubernetes-in-Kubernetes solution. It was born from the idea to provide Getdeck users with a simple yet flexible solution to spin up a hybrid cloud development infrastructure. This is useful for development workloads 
-that grew too large to run on a development machine (or with pony workloads on macOS and Windows machines).
+In order to test Getdeck completely **free** and easily we are providing with a free Kubernetes cluster that you can spin up using Getdeck and use as you please. The following details are valid for that Cluster:
 
+## Specs for the free cluster:
+* max. 4h cluster lifetime
+* no session timeout
+* max. 3 nodes (max. 2 cores, 6GB RAM, 50GB Storage)
+* max. 1 cluster at a time
 
-> If you like Beiboot, please give us a ⭐ star on [GitHub and support this project](https://github.com/Getdeck/beiboot).
+Please note, we have limited ressources available for this free setup. If there are many users trying to run a cluster at the same time, you may not be able to spin up a new cluster and waiting time may be involved.
+
+> If you like Getdeck, please give us a ⭐ star on [GitHub and support this project](https://github.com/Getdeck/beiboot).
 
 
 ## Features
 
-Beiboot offers:
+Getdeck offers:
 
 * to create a fresh ad-hoc Kubernetes cluster in seconds (much faster than Terraform or Cloud-provider)
-* automatic management of Beiboot clusters (via lifetime, inactivity, etc.)
-* shelve ("snapshot") a running Beiboot cluster with state and restore them as often as needed
+* automatic management of Getdeck clusters (via lifetime, inactivity, etc.)
+* shelve ("snapshot") a running Getdeck cluster with state and restore them as often as needed
 * run isolated workloads within Kubernetes; cheap and with the best resource utilization
 * automatic distribution of _kubeconfig_ and tunnel connection to clients (using the _Beiboot client package_)
 * built-in support for [Gefyra](https://gefyra.dev)
@@ -51,24 +46,17 @@ Tested on:
 * [k3d](https://k3d.io/)
 * [Minikube](https://minikube.sigs.k8s.io/) (with Docker driver)
 
-## Kubernetes-in-Kubernetes
-There are a couple of advantages running a logical ("virtual") Kubernetes cluster running within a physical
-Kubernetes cluster. The main focus of Beiboot is the on-demand creation of Kubernetes clusters for development and
-testing purposes. 
-Beiboot has potential for other scenarios, too. For example, strong workload isolation, multi-tenancy, CI, security 
-and more.
+## Get started
 
-Beiboot comes with a Kubernetes operator. It handles the management of ad-hoc logical clusters based on the requested 
-parameters.
-This includes the Kubernetes version, the way of exposing the cluster, lifetime and so on.
+1. Install Getdeck Desktop
+2. 
+
+## Need more resources or want to run Getdeck on your own infrastructure?
+Get in touch: getdeck@blueshoe.io
 
 
-![Beiboot Ops](/img/beiboot-ops.png)
 
-## A Local Kubernetes Cluster in the Cloud
-Beiboot's client does not only order a cluster based on the given parameters but also establishes a secure connection to it. It makes the requested ports (usually port 80 for *http*, port 443 for *https*) available on *localhost*, effectively making remote services available as they would run on the local machine. That happens entirely automatically using a secured *mTLS* connection. This works for any port.
 
-![Beiboot client connection](/img/beiboot-client-connection.png)
 
 
 
