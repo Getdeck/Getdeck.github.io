@@ -13,7 +13,7 @@ There are a couple of options available to work with Beiboot clusters:
 ## Using `deck` CLI With Provider `beiboot`
 The `deck` CLI from version **0.9.0+** integrated Beiboot as [supported cluster provider](/docs/deckfile-specs/#provider).
 A [Deckfile](/docs/deckfile-specs/) specifying the host cluster and port-mapping is required, too. Please read on
-[how to write a Deckfile using Beiboot](/beiboot/configuration/#usage).
+[how to write a Deckfile using Beiboot](/configuration/#usage).
 
 ## Working with `kubectl`
 ### Creating a Logical Kubernetes Cluster

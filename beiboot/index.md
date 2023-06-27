@@ -46,7 +46,7 @@ Tested on:
 * [k3d](https://k3d.io/)
 * [Minikube](https://minikube.sigs.k8s.io/) (with Docker driver)
 
-## Get started
+## Geting started
 
 1. Install Getdeck Desktop
 2. 
