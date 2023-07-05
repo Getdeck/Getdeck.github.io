@@ -21,7 +21,7 @@ function HomepageHeader() {
                         className="button button--primary button--lg"
                         style={{ "margin-right": "20px" }}
                         to="/docs/getdeck-as-a-service/">
-                        Quickstart with Getdeck as a Service
+                        Free quickstart with Getdeck as a Service
                     </Link>
 
 
@@ -151,7 +151,7 @@ export default function Home() {
                 </section>
 
                 <hr />
-                <h3 className={clsx(styles.sectionHeading)}><strong>Quick Demo</strong></h3>
+                <h3 className={clsx(styles.sectionHeading)}><br/><strong>Quick Demo</strong><br/><br/></h3>
                 <section className={clsx(styles.sectionSideBySide)}>
 
                     <div className={clsx(styles.sideBySideContent)}>
@@ -169,19 +169,6 @@ export default function Home() {
                         <Terminal src="/img/beibootctl-demo.gif" alt="Beiboot demo" />
                     </figure>
 
-                </section>
-
-                <hr />
-
-                <section>
-                    <div className={clsx(styles.section)}>
-                        <h2 className={clsx(styles.sectionHeading)}><strong>How it works</strong></h2>
-                    </div>
-                    <div>
-                        <center>
-                            <img src="img/locations.png" alt="workload locations Getdeck can work with" />
-                        </center>
-                    </div>
                 </section>
 
                 <hr />
@@ -340,7 +327,7 @@ export default function Home() {
                             </p>
                             <Link
                                 className={clsx("button button--primary button--lg", styles.center)}
-                                to="/docs/installation/">
+                                to="/docs/">
                                 Try it now
                             </Link>
                         </div>
