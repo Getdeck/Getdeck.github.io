@@ -18,17 +18,17 @@ function HomepageHeader() {
                 <div className={styles.buttons}>
 
                     <Link
-                        className="button button--secondary button--lg"
+                        className="button button--primary button--lg"
                         style={{ "margin-right": "20px" }}
-                        to="/docs/">
-                        Getting started with the CLI
+                        to="/docs/getdeck-as-a-service/">
+                        Quickstart with Getdeck as a Service
                     </Link>
 
 
                     <Link
                         className="button button--secondary button--lg"
-                        to="/beiboot/">
-                        Getting started with Getdeck
+                        to="/docs/selfhosted/">
+                        Get started with selfhosted Getdeck
                     </Link>
 
                 </div>
