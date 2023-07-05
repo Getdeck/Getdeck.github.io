@@ -40,12 +40,6 @@ const config = {
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
-        docs: {
-          routeBasePath: "docs",
-          path: "docs",
-          sidebarPath: require.resolve("./sidebarsBeiboot.js"),
-          editUrl: "https://github.com/Getdeck/Getdeck.github.io/tree/main/",
-        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -56,27 +50,6 @@ const config = {
         },
       }),
     ],
-  ],
-
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "docs",
-        path: "docs",
-        routeBasePath: "docs",
-        sidebarPath: require.resolve("./sidebarsBeiboot.js"),
-      },
-    ],
-    // [
-    //   "@docusaurus/plugin-content-docs",
-    //   {
-    //     id: "guides",
-    //     path: "guides",
-    //     routeBasePath: "guides",
-    //     sidebarPath: require.resolve("./sidebarsGuides.js"),
-    //   },
-    // ],
   ],
 
   themeConfig:
