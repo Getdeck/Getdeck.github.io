@@ -1,60 +1,62 @@
 ---
 title: Getdeck Introduction
 sidebar_position: 1
-description: Getdeck is an application to create reproducible Kubernetes development infrastructure
+description: What is Getdeck and what is it useful for
 ---
+
 
 <div class="text--center">
     <img src="/img/getdeck-logo.png" alt="Getdeck Logo" width="500"/>
 </div>
 <hr/>
+<b>Ad hoc virtual clusters in a few minutes</b>
 
-<b>Getdeck is an application to create reproducible Kubernetes development infrastructure.</b>
-
-The main focus is on simplicity and convenience for the [99% software developers](https://future.com/software-development-building-for-99-developers/).  
-
-Getdeck does not interfere with production-close Kubernetes systems. It also does not support production deployments.
+Getdeck allows you to spin up virtual kubernetes clusters easily that you can use for development and testing. Getdeck also allows you to save your current development state, tear the cluster down and restore it at a later point in time.
 
 <hr/>
 
-Getdeck is a command-line application (`deck`) and file specification (`Deckfile`) around the concept of a 
-Kubernetes _Deck_. If you want to know more about the concept itself, head over 
-to [the documentation of the concept](/docs/overview/what-is-a-deck) or the [Deckfile specification](/docs/deckfile-specs).
-Getdeck handles the workflow of providing parts of your existing Kubernetes infrastructure to Developers or
-Testers without having them to be Kubernetes experts, too. Think of Getdeck as the _docker-compose_ for your
-existing Kubernetes workloads.
 
-> If you already have members in your team putting a lot of effort in writing secure, compliant and off-the-shelf
-> Kubernetes workloads, why don't you use (at least parts of it) these for development, too?
+In order to test Getdeck completely **free** and easily we are providing with a free Kubernetes cluster that you can spin up using Getdeck and use as you please. The following details are valid for that Cluster:
 
-### Are you a developer?
-You understand your main task in writing code? - follow along [the developer-specific introduction](/docs/overview/introduction-for-developers/).
+## Specs for the free cluster:
+* max. 4h cluster lifetime
+* no session timeout
+* max. 3 nodes (max. 2 cores, 6GB RAM, 50GB Storage)
+* max. 1 cluster at a time
 
+Please note, we have limited ressources available for this free setup. If there are many users trying to run a cluster at the same time, you may not be able to spin up a new cluster and waiting time may be involved.
 
-### Are you a DevOps?
-You know all the things about Kubernetes or want to provide service to your developers? - 
-follow along with [the DevOps specific introduction](/docs/overview/introduction-for-devops/).
-
+> If you like Getdeck, please give us a ⭐ star on [GitHub and support this project](https://github.com/Getdeck/beiboot).
 
 
 ## Features
 
-The following features are currently the scope of Getdeck:
-* Roll out different Kubernetes-cluster on local development machines: 
-  * [`k3d`](https://k3d.io)
-  * [`kind`](https://kind.sigs.k8s.io/)
-  * [`beiboot`](/)
-  * Remote clusters
-* Define local Kubernetes environment using different source types for workloads:
-  * [`Helm`](https://helm.sh/), including many supported Helm plugins
-  * `kustomize`
-  * Plain YAML files or directories
-* Read Kubernetes workloads from different sources:
-  * Http(s)
-  * Git
-  * Filesystem
-* Management of locally required tools (i.e. installation, version handling, etc.)
-* Ease of use: one command for setting up local environments, one command for tearing it down again 
+Getdeck offers:
 
-## Demo
-Insert a fancy GIF here.
+* to create a fresh ad-hoc Kubernetes cluster in seconds (much faster than Terraform or Cloud-provider)
+* automatic management of Getdeck clusters (via lifetime, inactivity, etc.)
+* shelve ("snapshot") a running Getdeck cluster with state and restore them as often as needed
+* run isolated workloads within Kubernetes; cheap and with the best resource utilization
+* automatic distribution of _kubeconfig_ and tunnel connection to clients (using the _Beiboot client package_)
+* built-in support for [Gefyra](https://gefyra.dev)
+
+Tested on:
+* [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
+* [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/)
+* [k3d](https://k3d.io/)
+* [Minikube](https://minikube.sigs.k8s.io/) (with Docker driver)
+
+## Geting started
+
+1. Install Getdeck Desktop
+2. 
+
+## Need more resources or want to run Getdeck on your own infrastructure?
+Get in touch: getdeck@blueshoe.io
+
+
+
+
+
+
+

@@ -42,7 +42,7 @@ const config = {
         },
         docs: {
           routeBasePath: "docs",
-          path: "beiboot",
+          path: "docs",
           sidebarPath: require.resolve("./sidebarsBeiboot.js"),
           editUrl: "https://github.com/Getdeck/Getdeck.github.io/tree/main/",
         },
@@ -102,12 +102,7 @@ const config = {
             position: "left",
             label: "Docs",
           },        
-          {
-            position: "left",
-            label: "Getdeck Desktop",
-            to: "/getdeck-desktop/",
-            className: "navbar-icon-menu",
-          },
+         
           // {
           //   to: "/beiboot/",
           //   position: "left",

@@ -1,5 +1,5 @@
 ---
-title: Getdeck Desktop
+title: Installation
 description: Getdeck Desktop is a local application to manage Getdeck's virtual Kubernetes clusters
 ---
 # Getdeck Desktop

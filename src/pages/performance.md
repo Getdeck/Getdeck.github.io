@@ -1,6 +1,6 @@
 ---
 title: Performance Considerations
-sidebar_position: 6
+
 ---
 We researched and compared the performance of containers running in Beiboot clusters vs. the respective host cluster.
 

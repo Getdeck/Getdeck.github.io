@@ -1,5 +1,5 @@
 ---
-title: beibootctl
+title: beibootctl - How to use
 sidebar_position: 5
 ---
 
