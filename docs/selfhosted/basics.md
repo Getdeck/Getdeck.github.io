@@ -32,8 +32,8 @@ The following components are created in the host cluster as part of Beiboot:
 * a *configmap* called `beiboot-config` storing the global configuration
 * a *validatingwebhookconfiguration* for Beiboot's validation
 
-The operator itself registers a few additional Kubernetes objects, for example the `beiboot` [custom resource
-definition (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
+The operator itself registers a few additional Kubernetes objects, for example the `beiboot` and `shelf` [custom resource
+definitions (CRD)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
 
 
 ## Remove Beiboot from the Cluster
@@ -59,4 +59,4 @@ Finally, you can uninstall the operator by removing the `getdeck` namespace:
 kubectl delete ns getdeck
 ```
 The operator will catch the termination signal and delete its Kubernetes extensions. This way potentially leaves
-some remaining componens.
+some remaining components.
