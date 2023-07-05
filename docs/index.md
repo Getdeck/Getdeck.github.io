@@ -5,9 +5,7 @@ description: What is Getdeck and what is it useful for
 ---
 
 
-<div class="text--center">
-    <img src="/img/getdeck-logo.png" alt="Getdeck Logo" width="500"/>
-</div>
+
 <hr/>
 <b>Ad hoc virtual clusters in a few minutes</b>
 
@@ -33,8 +31,8 @@ Getdeck enables you to easily spin up virtual kubernetes clusters that you can u
 ## Support
 Regardless which option you choose, if you struggle in the setup of Getdeck, please reach out to us through the following channels:
 * [Join our discord](https://discord.gg/KPeGxY2fb8)
-* [Open an issue on Github]
-* Book yourself a quick support call
+* [Open an issue on Github](https://github.com/Getdeck/)
+* Book yourself a [quick support call](https://meetings.hubspot.com/hannes/getdeck-help)
 * Write us an E-mail: help@getdeck.dev
 
 

@@ -5,9 +5,6 @@ description: What is Getdeck and what is it useful for
 ---
 
 
-<div class="text--center">
-    <img src="/img/getdeck-logo.png" alt="Getdeck Logo" width="500"/>
-</div>
 <hr/>
 <b>Ad hoc virtual clusters in a few minutes</b>
 

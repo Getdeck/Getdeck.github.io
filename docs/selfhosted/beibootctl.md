@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## Get in contact
 Below you find the documentation of the `beibootctl` CLI. 
-If you struggle to set it up or need any other support, please find us on [Discord](https://discord.gg/KNN7yncs) or use this [link](https://meetings.hubspot.com/hannes/getdeck-help) to book a call.
+If you struggle to set it up or need any other support, please find us on [Discord](https://discord.gg/KPeGxY2fb8) or use this [link](https://meetings.hubspot.com/hannes/getdeck-help) to book a call.
 
 
 ## Syntax
