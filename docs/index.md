@@ -33,7 +33,7 @@ Regardless which option you choose, if you struggle in the setup of Getdeck, ple
 * [Join our discord](https://discord.gg/KPeGxY2fb8)
 * [Open an issue on Github](https://github.com/Getdeck/)
 * Book yourself a [quick support call](https://meetings.hubspot.com/hannes/getdeck-help)
-* Write us an E-mail: help@getdeck.dev
+* Write us an E-mail: getdeck@blueshoe.io
 
 
 

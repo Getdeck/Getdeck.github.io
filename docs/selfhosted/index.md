@@ -4,59 +4,37 @@ sidebar_position: 1
 description: What is Getdeck and what is it useful for
 ---
 
-
-<div class="text--center">
-    <img src="/img/getdeck-logo.png" alt="Getdeck Logo" width="500"/>
-</div>
-<hr/>
-<b>Ad hoc virtual clusters in a few minutes</b>
-
-Getdeck allows you to spin up virtual kubernetes clusters easily that you can use for development and testing. Getdeck also allows you to save your current development state, tear the cluster down and restore it at a later point in time.
-
 <hr/>
 
+## Be the host
+Of course you can run Getdeck also within your own infrastructure, and provide the host cluster. Getdeck is open source and you can find everything you should need in [our Getdeck Github repository](https://github.com/Getdeck)
 
-In order to test Getdeck completely **free** and easily we are providing with a free Kubernetes cluster that you can spin up using Getdeck and use as you please. The following details are valid for that Cluster:
+## Support
+Of course setting up Getdeck in you own infrastructure is a little more complex than simply using our [Getdeck-as-a-Service](/docs/getdeck-as-a-service) offering. Hence, if you get stuck, we are happy to help you as good as we can. Please use the following channels:
 
-## Specs for the free cluster:
-* max. 4h cluster lifetime
-* no session timeout
-* max. 3 nodes (max. 2 cores, 6GB RAM, 50GB Storage)
-* max. 1 cluster at a time
+* [Join our discord](https://discord.gg/KPeGxY2fb8)
+* [Open an issue on Github](https://github.com/Getdeck/)
+* Book yourself a [quick support call](https://meetings.hubspot.com/hannes/getdeck-help)
+* Write us an E-mail: help@getdeck.dev
 
-Please note, we have limited ressources available for this free setup. If there are many users trying to run a cluster at the same time, you may not be able to spin up a new cluster and waiting time may be involved.
+## Current state
+Please note that Getdeck is currently in an early stage. We are relying on the community to tell us if something is not working or not behaving as expected. Also, we need the input of the community to figure out where we need to take Getdeck next, from a feature perspective. So, please, in any of these cases, [open an issue on Github](https://github.com/Getdeck/).
 
-> If you like Getdeck, please give us a ⭐ star on [GitHub and support this project](https://github.com/Getdeck/beiboot).
+### Getdeck has been tested on:
 
-
-## Features
-
-Getdeck offers:
-
-* to create a fresh ad-hoc Kubernetes cluster in seconds (much faster than Terraform or Cloud-provider)
-* automatic management of Getdeck clusters (via lifetime, inactivity, etc.)
-* shelve ("snapshot") a running Getdeck cluster with state and restore them as often as needed
-* run isolated workloads within Kubernetes; cheap and with the best resource utilization
-* automatic distribution of _kubeconfig_ and tunnel connection to clients (using the _Beiboot client package_)
-* built-in support for [Gefyra](https://gefyra.dev)
-
-Tested on:
 * [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
 * [AWS Elastic Kubernetes Service](https://aws.amazon.com/eks/)
 * [k3d](https://k3d.io/)
 * [Minikube](https://minikube.sigs.k8s.io/) (with Docker driver)
 
-## Geting started
+## Get started
 
-1. Install Getdeck Desktop
-2. 
-
-## Need more resources or want to run Getdeck on your own infrastructure?
-Get in touch: getdeck@blueshoe.io
-
-
-
-
+* [Basic considerations](/docs/selfhosted/basics)
+* [Install beibootctl](/docs/selfhosted/beibootctl-install/)
+* [Install beiboot operator](/docs/selfhosted/cluster/)
+* [Configuration](/docs/selfhosted/configuration/)
+* [beibootctl - How to use](/docs/selfhosted/beibootctl/)
+* [Shelf - Store and restore the state of a cluster](/docs/selfhosted/shelf/)
 
 
 
