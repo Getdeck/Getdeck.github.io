@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Getdeck",
   tagline:
-    "A tool suite to provide reproducible Kubernetes environments for development and testing.",
+    "Instant virtual ephemeral development and testing clusters",
   url: "https://getdeck.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -25,6 +25,19 @@ const config = {
       defer: true,
     },
   ],
+  plugins: [
+      [
+          '@docusaurus/plugin-client-redirects',
+          {
+              redirects: [
+                  {
+                      from: '/beiboot',
+                      to: '/docs',
+                  }
+              ]
+          }
+      ]
+  ],
   presets: [
     [
       "classic",
@@ -40,12 +53,6 @@ const config = {
           ignorePatterns: ["/tags/**"],
           filename: "sitemap.xml",
         },
-        docs: {
-          routeBasePath: "docs",
-          path: "docs",
-          sidebarPath: require.resolve("./sidebarsDocs.js"),
-          editUrl: "https://github.com/Getdeck/Getdeck.github.io/tree/main/",
-        },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -58,34 +65,13 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "beiboot",
-        path: "beiboot",
-        routeBasePath: "beiboot",
-        sidebarPath: require.resolve("./sidebarsBeiboot.js"),
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "guides",
-        path: "guides",
-        routeBasePath: "guides",
-        sidebarPath: require.resolve("./sidebarsGuides.js"),
-      },
-    ],
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
         id: "support_us",
         content:
-          'If you like Getdeck, please give us a ⭐ star on <a target="_blank" href="https://github.com/Getdeck/getdeck/">GitHub</a> and support this project.',
+          'If you like Getdeck Desktop, please give us a ⭐ star on <a target="_blank" href="https://github.com/Getdeck/getdeck-desktop/">GitHub</a> and support this project.',
         backgroundColor: "#ebedf0",
         textColor: "#1c1e21",
         isCloseable: false,
@@ -101,91 +87,92 @@ const config = {
             to: "/docs/",
             position: "left",
             label: "Docs",
-          },
-          {
-            to: "/beiboot/",
-            position: "left",
-            label: "Beiboot",
-            className: "navbar-icon-menu",
-          },
-          {
-            position: "left",
-            label: "Wharf",
-            to: "/wharf/",
-            className: "navbar-icon-menu",
-          },
-          {
-            type: "dropdown",
-            position: "left",
-            label: "Guides",
-            className: "navbar-icon-menu",
-            items: [
-              {
-                label: "Hello World From Getdeck",
-                to: "/guides/hello-world-from-getdeck/",
-              },
-              {
-                label: "Using Inlines as a Source",
-                to: "/guides/using-inline-as-source/",
-              },
-              {
-                label: "Using Files as a Source",
-                to: "/guides/using-file-as-source/",
-              },
-              {
-                label: "Using Helm as a Source",
-                to: "/guides/using-helm-as-source/",
-              },
-              {
-                label: "Using Kustomize as a Source",
-                to: "/guides/using-kustomize-as-source/",
-              },
-              {
-                label: "Integrating non-Kubernetes Resources",
-                to: "/guides/integrating-non-kubernetes-resources/",
-              },
-              {
-                label: "Getdeck together with Gefyra",
-                to: "/guides/getdeck-with-gefyra/",
-              },
-              {
-                label: "Developing with Kubernetes",
-                to: "/guides/developing-with-kubernetes/",
-              },
-            ],
-          },
+          },        
+         
+          // {
+          //   to: "/beiboot/",
+          //   position: "left",
+          //   label: "Beiboot",
+          //   className: "navbar-icon-menu",
+          // },
+          // {
+          //   position: "left",
+          //   label: "Wharf",
+          //   to: "/wharf/",
+          //   className: "navbar-icon-menu",
+          // },
+          // {
+          //   type: "dropdown",
+          //   position: "left",
+          //   label: "Guides",
+          //   className: "navbar-icon-menu",
+          //   items: [
+          //     {
+          //       label: "Hello World From Getdeck",
+          //       to: "/guides/hello-world-from-getdeck/",
+          //     },
+          //     {
+          //       label: "Using Inlines as a Source",
+          //       to: "/guides/using-inline-as-source/",
+          //     },
+          //     {
+          //       label: "Using Files as a Source",
+          //       to: "/guides/using-file-as-source/",
+          //     },
+          //     {
+          //       label: "Using Helm as a Source",
+          //       to: "/guides/using-helm-as-source/",
+          //     },
+          //     {
+          //       label: "Using Kustomize as a Source",
+          //       to: "/guides/using-kustomize-as-source/",
+          //     },
+          //     {
+          //       label: "Integrating non-Kubernetes Resources",
+          //       to: "/guides/integrating-non-kubernetes-resources/",
+          //     },
+          //     {
+          //       label: "Getdeck together with Gefyra",
+          //       to: "/guides/getdeck-with-gefyra/",
+          //     },
+          //     {
+          //       label: "Developing with Kubernetes",
+          //       to: "/guides/developing-with-kubernetes/",
+          //     },
+          //   ],
+          // },
           {
             position: "right",
             label: "About",
             to: "/about/",
             className: "navbar-icon-menu",
           },
-          {
-            to: "/docs/cli-reference/",
-            position: "left",
-            label: "CLI",
-            className:
-              "navbar-icon-menu button button--secondary button--navitem",
-          },
-          {
-            to: "/docs/deckfile-specs/",
-            position: "left",
-            label: "deck.yaml",
-            className:
-              "navbar-icon-menu button button--secondary button--navitem",
-          },
+          // {
+          //   to: "/docs/cli-reference/",
+          //   position: "left",
+          //   label: "CLI",
+          //   className:
+          //     "navbar-icon-menu button button--secondary button--navitem",
+          // },
+          // {
+          //   to: "/docs/deckfile-specs/",
+          //   position: "left",
+          //   label: "deck.yaml",
+          //   className:
+          //     "navbar-icon-menu button button--secondary button--navitem",
+          // },
           {
             href: "https://github.com/Getdeck/getdeck",
             label: "GitHub",
             position: "right",
             "aria-label": "GitHub repository",
           },
-          {
-            href: "https://unikube.io/",
-            label: "Getdeck will become part of Unikube",
-            position: "right",
-            "aria-label": "Unikube.io website",
-          },
+          // {
+          //   href: "https://unikube.io/",
+          //   label: "Getdeck will become part of Unikube",
+          //   position: "right",
+          //   "aria-label": "Unikube.io website",
+          // },
         ],
       },
       footer: {
@@ -193,24 +180,24 @@ const config = {
         links: [
           {
             title: "Docs",
-            items: [
-              {
-                label: "Introduction for Developers",
-                to: "/docs/overview/introduction-for-developers/",
-              },
-              {
-                label: "Introduction for DevOps",
-                to: "/docs/overview/introduction-for-devops/",
-              },
-              {
-                label: "Deckfile",
-                to: "/docs/deckfile-specs/",
-              },
-              {
-                label: "CLI Reference",
-                to: "/docs/cli-reference/",
-              },
-            ],
+            // items: [
+            //   {
+            //     label: "Introduction for Developers",
+            //     to: "/docs/overview/introduction-for-developers/",
+            //   },
+            //   {
+            //     label: "Introduction for DevOps",
+            //     to: "/docs/overview/introduction-for-devops/",
+            //   },
+            //   {
+            //     label: "Deckfile",
+            //     to: "/docs/deckfile-specs/",
+            //   },
+            //   {
+            //     label: "CLI Reference",
+            //     to: "/docs/cli-reference/",
+            //   },
+            // ],
           },
           {
             title: "Community",
@@ -224,8 +211,12 @@ const config = {
                 label: "Beiboot",
               },
               {
-                href: "https://github.com/Getdeck/wharf",
-                label: "Wharf",
+                href: "https://github.com/Getdeck/beiboot-desktop",
+                label: "Getdeck Desktop",
+              },
+              {
+                href: "https://github.com/Getdeck/beiboot-api",
+                label: "Getdeck Api",
               },
             ],
           },
@@ -237,8 +228,8 @@ const config = {
                 href: "https://github.com/gefyrahq/gefyra",
               },
               {
-                label: "Unikube",
-                href: "https://unikube.io",
+                label: "Blueshoe",
+                href: "https://blueshoe.io",
               },
             ],
           },
