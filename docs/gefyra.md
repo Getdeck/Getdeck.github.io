@@ -10,7 +10,7 @@ The connection parameters for Gefyra to connect (upon `gefyra up`) are pulled in
 the _kubeconfig_ for the Beiboot cluster in your current shell.
 
 **Important:** The host cluster must allow UDP connections to the port range defined in the Beiboot cluster configuration.
-Please see the [values from the `gefyra` attribute](/configuration/#beiboot-cluster-configuration) in the Beiboot 
+Please see the [values from the `gefyra` attribute](docs/selfhosted/configuration/#beiboot-cluster-configuration) in the Beiboot 
 cluster configuration.
 
 The default port range is `31820-31920`, which allows for 100 simultaneous Beiboot clusters to be connected with Gefyra.

@@ -74,7 +74,7 @@ export default function Home() {
                             </p>
                             <Link
                                 className={clsx("button button--primary button--lg", styles.center)}
-                                to="/docs/installation/">
+                                to="/docs/getdeck-as-a-service/installation/">
                                 We're open source
                             </Link>
                         </div>
@@ -141,7 +141,7 @@ export default function Home() {
                         </p>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/getting-started/">
+                            to="/docs/getdeck-as-a-service/getting-started/">
                             Getting started
                         </Link>
                     </div>
