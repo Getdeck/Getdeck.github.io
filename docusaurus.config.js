@@ -25,6 +25,19 @@ const config = {
       defer: true,
     },
   ],
+  plugins: [
+      [
+          '@docusaurus/plugin-client-redirects',
+          {
+              redirects: [
+                  {
+                      from: '/beiboot',
+                      to: '/docs',
+                  }
+              ]
+          }
+      ]
+  ],
   presets: [
     [
       "classic",
