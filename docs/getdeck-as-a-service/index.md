@@ -4,7 +4,7 @@ sidebar_position: 1
 description: What is Getdeck and what is it useful for
 ---
 
-In order to test Getdeck completely **free** and easily we are providing with a free Kubernetes cluster that you can spin up using Getdeck and use as you please. The following details are valid for that Cluster:
+In order to test Getdeck completely **free** and easily we are providing you with a free Kubernetes cluster that you can spin up using Getdeck and use as you please. The following details are valid for that Cluster:
 
 ## Specs for the free cluster:
 * max. 4h cluster lifetime
