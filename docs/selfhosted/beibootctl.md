@@ -62,10 +62,6 @@ Manage Beiboot clusters.
 ### `beibootctl connect`
 Set up the tunnel connection to a Beiboot cluster.
 
-**Hint:** When you're interacting with the connected Beiboot cluster, you probably see errors, for example when running `kubectl exec [...]`. 
-They can take the form of `error: error sending request: Post "[...]": EOF`.  
-We're working on a solution for this. If you encounter it in the meantime, please try again.
-
 **Syntax:** `beibootctl connect [OPTIONS] NAME`
 
 **Example:** `beibootctl connect test-cluster`

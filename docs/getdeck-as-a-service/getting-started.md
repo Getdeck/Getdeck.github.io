@@ -3,6 +3,9 @@ title: Getting started
 description: Getdeck Desktop is a local application to manage Getdeck's virtual Kubernetes clusters
 sidebar_position: 2
 ---
+### Install Getdeck Desktop
+[Install](/docs/getdeck-as-a-service/installation) the latest version if needed.
+
 ### Creating an account
 In order to use Getdeck as a Service, you need to sign up for a free account. You gan either use an email adress and a password, or you can sign 
 in with Github.
