@@ -21,7 +21,7 @@ function HomepageHeader() {
                         className="button button--primary button--lg"
                         style={{ "margin-right": "20px", "min-width": "250px" }}
                         to="/docs/getdeck-as-a-service/">
-                        Getdeck quickstart
+                        Quickstart
                     </Link>
 
 
@@ -29,7 +29,7 @@ function HomepageHeader() {
                         className="button button--secondary button--lg"
                         style={{ "min-width": "250px" }}
                         to="/docs/selfhosted/">
-                        Getdeck selfhosted
+                        Selfhosted
                     </Link>
 
                 </div>
